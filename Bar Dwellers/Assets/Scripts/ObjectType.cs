@@ -6,6 +6,8 @@ public enum DrinkType
     CremDeCassis,
     GingerBeer,
     Tequila,
-    Anything
+    Spoon,
+    
+    Anything,
 
 }
