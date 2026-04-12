@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 285281099}
   - component: {fileID: 285281098}
   - component: {fileID: 285281101}
+  - component: {fileID: 285281103}
   m_Layer: 5
   m_Name: Mixer
   m_TagString: Untagged
@@ -268,9 +269,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   contents: 
-  MaxDrinks: 2
-  shakeRequired: 500
+  maxCapacity: 2
   isMixed: 0
+  shakeRequired: 500
+  shakeProgressBar: {fileID: 0}
+  canvas: {fileID: 1572951687}
+--- !u!225 &285281103
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285281095}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &451002076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,6 +1334,7 @@ GameObject:
   - component: {fileID: 1390929093}
   - component: {fileID: 1390929095}
   - component: {fileID: 1390929094}
+  - component: {fileID: 1390929096}
   m_Layer: 0
   m_Name: Empty_glass
   m_TagString: Untagged
@@ -1442,6 +1458,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390929091}
   m_CullTransparentMesh: 1
+--- !u!114 &1390929096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390929091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db93f52c65adca43b4fff472fd7532a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  recipeBook:
+  - DrinkName: El Diablo
+    ingredients: 0300000001000000
+    drinkColor: {r: 0.94716984, g: 0.23854393, b: 0.2198148, a: 0}
+  liquidImage: {fileID: 8845596456639834968, guid: 166fd61af52963f429d32c6873f4eef0, type: 3}
 --- !u!1 &1572951683
 GameObject:
   m_ObjectHideFlags: 0
