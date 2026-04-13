@@ -36,7 +36,7 @@ public class EmptyGlass : MonoBehaviour, IDropHandler
                 }
                 if (match)
                 {
-
+                    transform.GetChild(0).gameObject.SetActive(true);
                 }
             }
         }
