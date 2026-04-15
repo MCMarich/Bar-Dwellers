@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
   m_Name: Crying
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  npcName: 
-  _lines: []
+  npcName: FresnoNightCrawler
+  _lines:
+  - NO!
+  - FUCK, I WISH I WAS IN FRESNO RIGHT NOW!
+  - NOTHING BAD EVER HAPPENS IN FRESNO, CALIFORNIA!
   _playerReplyOptions: []
   _npcReplies: []

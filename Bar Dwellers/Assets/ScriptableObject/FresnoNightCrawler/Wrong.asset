@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
   m_Name: Wrong
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  npcName: 
-  _lines: []
-  _playerReplyOptions: []
-  _npcReplies: []
+  npcName: FresnoNightCrawler
+  _lines:
+  - This is bullshit...
+  - This place sucks...
+  - You suck...
+  - Capitalism has really rotted the core of this fuckin' society.
+  _playerReplyOptions:
+  - Are you crying?
+  _npcReplies:
+  - {fileID: 11400000, guid: 45b39335a04581f4b965edd54dc75744, type: 2}

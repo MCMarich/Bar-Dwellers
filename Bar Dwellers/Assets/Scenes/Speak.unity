@@ -1456,7 +1456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59cb85cfdd0a514694b0f97e30d236c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIController
-  _inventorybox: {fileID: 0}
+  _inventorybox: {fileID: 1698547579}
   _dialogueBox: {fileID: 179812866}
   _npcText: {fileID: 1666121426}
   _playerOptions: {fileID: 1705487589}

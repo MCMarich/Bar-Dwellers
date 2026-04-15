@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
   m_Name: Corret
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  npcName: 
-  _lines: []
+  npcName: FresnNightCrawler
+  _lines:
+  - Ah, there we fuckin' go!
+  - Hey, kid, if you see any dead fascists around tomorrow...
+  - Look the other way, okay?
+  - THE NIGHT IS STILL YOUNG, ROCKER BOY!
   _playerReplyOptions: []
   _npcReplies: []
