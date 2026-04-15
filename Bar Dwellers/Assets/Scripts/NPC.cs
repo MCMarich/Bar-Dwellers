@@ -1,10 +1,18 @@
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
-using static UnityEditor.Progress;
+using UnityEngine.SceneManagement;
 
-
-public class DialogueController : MonoBehaviour
+public enum NPCSpeech
 {
+    Idle, Talking
+}
+
+public class NPC : MonoBehaviour
+{
+    public NPCSpeech _npcReaction;
+    public bool _playerHasKeyItem;
+
+    // dialogue controller variables
     [SerializeField] private UIController _dialogue;
     [SerializeField] private NPC _currentNPC;
     private DialogueNode _dialogueStartNode;
@@ -13,27 +21,41 @@ public class DialogueController : MonoBehaviour
     private bool _waitingForPlayerResponse;
     public bool _appear = false;
 
+    // dialogue member variables
+    [SerializeField] public string _name;
+    [SerializeField] private string _keyItem; // assigned individually to NPC
+    [SerializeField] private GameObject _dialoguebox;
+    public DialogueNode[] _dialogueStartingNodes; // list of starting dialogue depending on _hasKeyItem 
 
-    public void Talk(NPC npc)
+    private void Awake()
     {
-        _currentNPC = npc;
-
-        if (_currentNPC.GetName() == "FresnoNightCrawler" //end condition
+        if (_name == "FresnoNightCrawler" 
             && Player.Instance._inventoryString.Contains("El Diablo"))
         {
-            _dialogueStartNode = _currentNPC._dialogueStartingNodes[1];
+            _currentNode = _dialogueStartingNodes[1];
         }
         else
         {
-            Debug.Log("player doesn't have key item for npc");
-            _dialogueStartNode = _currentNPC._dialogueStartingNodes[0];
+            _currentNode = _dialogueStartingNodes[0];
         }
+    }
 
+    private void Start()
+    {
+        if (_npcReaction == NPCSpeech.Idle) // if idle and get interact input
+        {
+            _npcReaction = NPCSpeech.Talking;
+            _dialoguebox.SetActive(true);
+        }
+    }
 
-        _currentNode = _dialogueStartNode;
-        _currentNPC._npcReaction = NPCSpeech.Talking;
-        _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
-
+    void Update()
+    {
+        if (_npcReaction == NPCSpeech.Talking // if talking and get continue input
+            && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
+        {
+            AdvanceDialogue();
+        }
     }
 
     public void AdvanceDialogue()
@@ -70,12 +92,20 @@ public class DialogueController : MonoBehaviour
     private void EndDialogue()
     {
         Debug.Log("ended dialogue");
-
-        _currentNPC._npcReaction = NPCSpeech.Idle; // put state off talking
+        _npcReaction = NPCSpeech.Idle;
+        _dialoguebox.SetActive(false);
         _waitingForPlayerResponse = false;
         _currentNode = _dialogueStartNode;
         _currentLine = 0;
+    }
 
-        _dialogue.HideDialogue();
+    public NPC getNPC()
+    {
+        return this;
+    }
+
+    public string GetName()
+    {
+        return _name;
     }
 }

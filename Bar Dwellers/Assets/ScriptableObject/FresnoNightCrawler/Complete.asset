@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
-  m_Name: Complacent
+  m_Name: Complete
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   npcName: FresnoNightCrawler
   _lines:
-  - Not like you're missing much...
-  - But I feel you should check it out.
-  - But I didn't come here to sell you on some shit, y'know.
-  - I just want something hard to get me thrashing..
-  - And don't forget the zest too.
+  - Thanks.
+  - Keep the change...
+  - I don't believe in money anyway.
   _playerReplyOptions: []
   _npcReplies: []
