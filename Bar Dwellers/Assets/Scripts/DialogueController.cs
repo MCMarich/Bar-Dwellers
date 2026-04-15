@@ -25,7 +25,6 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
-            Debug.Log("player doesn't have key item for npc");
             _dialogueStartNode = _currentNPC._dialogueStartingNodes[0];
         }
 
@@ -41,23 +40,31 @@ public class DialogueController : MonoBehaviour
         Debug.Log("advanced dialogue");
         if (_currentLine < _currentNode._lines.Length)
         {
-            // if we still have NPC lines left, keep playing NPC lines
             _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
             _currentLine++;
         }
         else if (_currentNode._playerReplyOptions != null && _currentNode._playerReplyOptions.Length > 0)
         {
-            // show player dialogue options, if there are any
             _waitingForPlayerResponse = true;
             _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
         }
         else
         {
-            // if there are no NPC or player lines left, close dialogue UI
             EndDialogue();
         }
     }
 
+    private void EndDialogue()
+    {
+        Debug.Log("ended dialogue");
+
+        _currentNPC._npcReaction = NPCSpeech.Idle;
+        _waitingForPlayerResponse = false;
+        _currentNode = _dialogueStartNode;
+        _currentLine = 0;
+
+        _dialogue.HideDialogue();
+    }
     public void SelectedOption(int option)
     {
         _currentLine = 0;
@@ -65,17 +72,5 @@ public class DialogueController : MonoBehaviour
 
         _currentNode = _currentNode._npcReplies[option];
         AdvanceDialogue();
-    }
-
-    private void EndDialogue()
-    {
-        Debug.Log("ended dialogue");
-
-        _currentNPC._npcReaction = NPCSpeech.Idle; // put state off talking
-        _waitingForPlayerResponse = false;
-        _currentNode = _dialogueStartNode;
-        _currentLine = 0;
-
-        _dialogue.HideDialogue();
     }
 }

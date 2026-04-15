@@ -10,9 +10,6 @@ public enum NPCSpeech
 public class NPC : MonoBehaviour
 {
     public NPCSpeech _npcReaction;
-    public bool _playerHasKeyItem;
-
-    // dialogue controller variables
     [SerializeField] private UIController _dialogue;
     [SerializeField] private NPC _currentNPC;
     private DialogueNode _dialogueStartNode;
@@ -21,11 +18,10 @@ public class NPC : MonoBehaviour
     private bool _waitingForPlayerResponse;
     public bool _appear = false;
 
-    // dialogue member variables
     [SerializeField] public string _name;
-    [SerializeField] private string _keyItem; // assigned individually to NPC
     [SerializeField] private GameObject _dialoguebox;
-    public DialogueNode[] _dialogueStartingNodes; // list of starting dialogue depending on _hasKeyItem 
+        // all the areas the convo can start in 
+    public DialogueNode[] _dialogueStartingNodes; 
 
     private void Awake()
     {
@@ -42,7 +38,7 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
-        if (_npcReaction == NPCSpeech.Idle) // if idle and get interact input
+        if (_npcReaction == NPCSpeech.Idle) // if the NPC is in Idle then you can speak to them/ dialouge box shows up
         {
             _npcReaction = NPCSpeech.Talking;
             _dialoguebox.SetActive(true);
@@ -51,7 +47,7 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-        if (_npcReaction == NPCSpeech.Talking // if talking and get continue input
+        if (_npcReaction == NPCSpeech.Talking // lets NPC talk only when the player lets the speech advance with button presses
             && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
             AdvanceDialogue();
@@ -60,22 +56,20 @@ public class NPC : MonoBehaviour
 
     public void AdvanceDialogue()
     {
-        Debug.Log("advanced dialogue");
         if (_currentLine < _currentNode._lines.Length)
         {
-            // if we still have NPC lines left, keep playing NPC lines
             _dialogue.ShowDialogue(_currentNode._lines[_currentLine]);
             _currentLine++;
         }
         else if (_currentNode._playerReplyOptions != null && _currentNode._playerReplyOptions.Length > 0)
         {
-            // show player dialogue options, if there are any
+            // show player dialogue choices
             _waitingForPlayerResponse = true;
             _dialogue.ShowPlayerOptions(_currentNode._playerReplyOptions);
         }
         else
         {
-            // if there are no NPC or player lines left, close dialogue UI
+            // ends talking state if there is nothing left to talk about 
             EndDialogue();
         }
     }
@@ -99,6 +93,7 @@ public class NPC : MonoBehaviour
         _currentLine = 0;
     }
 
+    // If the drink you choose for the patron is correct
     public void Correct()
     {
         _dialogue._inventorybox.SetActive(false);
@@ -106,6 +101,8 @@ public class NPC : MonoBehaviour
         _currentNode = _dialogueStartingNodes[2];
         _dialoguebox.SetActive(true);
     }
+    
+    // If the drink you choose for the patron is wrong
 
     public void Wrong()
     {

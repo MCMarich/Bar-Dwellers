@@ -2979,12 +2979,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   _npcReaction: 0
-  _playerHasKeyItem: 0
   _dialogue: {fileID: 767432171}
   _currentNPC: {fileID: 0}
   _appear: 0
   _name: FresnoNightCrawler
-  _keyItem: El Diablo
   _dialoguebox: {fileID: 179812866}
   _dialogueStartingNodes:
   - {fileID: 11400000, guid: 30d9a927cf3c3eb488963a21647838d0, type: 2}
@@ -3236,8 +3234,8 @@ Transform:
   m_GameObject: {fileID: 1747126276}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0168, y: -0.0169, z: 0}
-  m_LocalScale: {x: 2.5, y: 3, z: 1}
+  m_LocalPosition: {x: 0.0202, y: 0.0201, z: 0}
+  m_LocalScale: {x: 2.5826604, y: 2.9790368, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
