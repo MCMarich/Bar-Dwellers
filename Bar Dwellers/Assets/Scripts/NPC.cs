@@ -99,6 +99,22 @@ public class NPC : MonoBehaviour
         _currentLine = 0;
     }
 
+    public void Correct()
+    {
+        _dialogue._inventorybox.SetActive(false);
+        _npcReaction = NPCSpeech.Talking;
+        _currentNode = _dialogueStartingNodes[2];
+        _dialoguebox.SetActive(true);
+    }
+
+    public void Wrong()
+    {
+        _dialogue._inventorybox.SetActive(false);
+        _npcReaction = NPCSpeech.Talking;
+        _currentNode = _dialogueStartingNodes[3];
+        _dialoguebox.SetActive(true);
+    }
+
     public NPC getNPC()
     {
         return this;

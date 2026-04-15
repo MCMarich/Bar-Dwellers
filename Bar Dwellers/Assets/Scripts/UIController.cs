@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
+    [SerializeField] public GameObject _inventorybox;
+    private bool _boxActive = false;
     // dialogue UI
     [SerializeField] private GameObject _dialogueBox;
     [SerializeField] private TMP_Text _npcText;
@@ -11,6 +13,19 @@ public class UIController : MonoBehaviour
     [SerializeField] private TMP_Text _option2;
     [SerializeField] private TMP_Text _option3;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I) && _boxActive == false)
+        {
+            _inventorybox.SetActive(true);
+            _boxActive = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.I) && _boxActive == true)
+        {
+            _inventorybox.SetActive(false);
+            _boxActive = false;
+        }
+    }
     // dialogue logic
     public void ShowDialogue(string dialogue)
     {
