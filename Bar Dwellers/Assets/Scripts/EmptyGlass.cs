@@ -5,11 +5,14 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Unity.VisualScripting.FullSerializer;
 using System.Net.Security;
+using System.Collections;
 
 public class EmptyGlass : MonoBehaviour, IDropHandler
 {
     public List<Recipe> recipeBook;
     public Image liquidImage;
+    public Sprite newSprite;
+    public GameObject button;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -27,7 +30,7 @@ public class EmptyGlass : MonoBehaviour, IDropHandler
     {
         foreach (Recipe recipe in recipeBook)
         {
-            if (ingredients.Count == recipe.ingredients.Count)
+            if (ingredients.Count == recipe.ingredients.Count) // Checks if the ingredients match any recipe's ingredients
             {
                 bool match = true;
                 foreach (var item in recipe.ingredients)
@@ -36,18 +39,12 @@ public class EmptyGlass : MonoBehaviour, IDropHandler
                 }
                 if (match)
                 {
-                    transform.GetChild(0).gameObject.SetActive(true);
+                    liquidImage.sprite = newSprite;
+                    button.SetActive(true); //Sets a button to swtich screens active
+                    return;
                 }
             }
         }
         Debug.Log("Did not create drink");
     }
-    
-    void Serve(Recipe recipe)
-    {
-        Debug.Log("Served: " + recipe.DrinkName);
-        liquidImage.color = recipe.drinkColor;
-        liquidImage.gameObject.SetActive(true);
-    }
-    
 }

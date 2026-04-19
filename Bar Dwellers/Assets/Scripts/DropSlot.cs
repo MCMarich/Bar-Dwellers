@@ -13,13 +13,13 @@ public class DropSlot : MonoBehaviour, IDropHandler
         {
             DragNDrop bottle = eventData.pointerDrag.GetComponent<DragNDrop>();
 
-            bool isCorrectType = (acceptedType == DrinkType.Anything) || (bottle.bottleType == acceptedType);
+            bool isCorrectType = (acceptedType == DrinkType.Anything) || (bottle.bottleType == acceptedType); // Checks if correct drink type
 
-            if (bottle != null && isCorrectType && !isOccupied)
+            if (bottle != null && isCorrectType && !isOccupied) // Chekcs if bottle is correct object type and the slot is not occupied
             {
                 RectTransform bottleRect = eventData.pointerDrag.GetComponent<RectTransform>();
 
-                bottleRect.SetParent(transform);
+                bottleRect.SetParent(transform); //Sets itself as parent for the bottle
                 bottleRect.anchoredPosition = Vector2.zero;
 
                 isOccupied = true;
