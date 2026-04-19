@@ -20,13 +20,13 @@ MonoBehaviour:
     rid: 3419768479204245504
   m_OverrideGlobalSceneList: 1
   m_Scenes:
-  - m_enabled: 0
+  - m_enabled: 1
     m_path: Assets/Scenes/MixingScene.unity
     m_guid: 0c0d80872588ef14c96156900f415464
   - m_enabled: 1
     m_path: Assets/Scenes/StirringScene.unity
     m_guid: e9024209a2413014abc39d238e7d84aa
-  - m_enabled: 0
+  - m_enabled: 1
     m_path: Assets/Scenes/Speak.unity
     m_guid: 01e2f466dc707da468663785ee549262
   m_HasScriptingDefines: 0

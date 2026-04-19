@@ -8,5 +8,14 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Speak.unity
+    guid: 01e2f466dc707da468663785ee549262
+  - enabled: 1
+    path: Assets/Scenes/StirringScene.unity
+    guid: e9024209a2413014abc39d238e7d84aa
+  - enabled: 1
+    path: Assets/Scenes/MixingScene.unity
+    guid: 0c0d80872588ef14c96156900f415464
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

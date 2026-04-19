@@ -8,4 +8,8 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("StirringScene");
     }
+    public void SendToMixing() // Speak -> Mixing
+    {
+        SceneManager.LoadScene("MixingScene");
+    }
 }
