@@ -2045,7 +2045,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1964224223}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: SendToMixing
+        m_MethodName: SendToMixingEl
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2446,9 +2446,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1668817637}
-        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
-        m_MethodName: Wrong
+      - m_Target: {fileID: 1964224223}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: SendToMixingScarlet
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3668,9 +3668,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1668817637}
-        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
-        m_MethodName: Wrong
+      - m_Target: {fileID: 1964224223}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: SendToMixingEl
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

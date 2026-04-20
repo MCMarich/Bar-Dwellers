@@ -1754,8 +1754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   recipeBook:
-  - DrinkName: El Diablo
-    ingredients: 03000000010000000200000000000000
+  - DrinkName: Scarlett_O_hara
+    ingredients: 03000000000000000100000002000000
     drinkColor: {r: 0.94716984, g: 0.23854393, b: 0.2198148, a: 0}
   liquidImage: {fileID: 1390929094}
   newSprite: {fileID: -2234155735218157593, guid: b990b2b05a58ba844a5a899a3c6804b9, type: 3}

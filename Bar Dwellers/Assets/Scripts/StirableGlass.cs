@@ -9,6 +9,7 @@ public class StirableGlass : MonoBehaviour
     public float StirRequired = 1000f;
     private float currentStirProgress = 0f;
     public bool isStirred = false;
+    public GameObject button;
 
     private RectTransform rectTransform;
     private Vector2 originalPos;
@@ -50,6 +51,9 @@ public class StirableGlass : MonoBehaviour
 
         transform.rotation = quaternion.identity;
 
+        button.SetActive(true);
+
         Debug.Log("The drink is perfectly stirred!");
+
     }
 }

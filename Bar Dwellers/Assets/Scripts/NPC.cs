@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public enum NPCSpeech
 {
@@ -28,7 +29,11 @@ public class NPC : MonoBehaviour
         if (_name == "FresnoNightCrawler" 
             && Player.Instance._inventoryString.Contains("El Diablo"))
         {
-            _currentNode = _dialogueStartingNodes[1];
+            _currentNode = _dialogueStartingNodes[2];
+        }
+        else if(_name == "FresnoNightCrawler" && !Player.Instance._inventoryString.Contains("El Diablo") && Player.Instance._inventoryString.Count != 0)
+        {
+            _currentNode = _dialogueStartingNodes[3];
         }
         else
         {

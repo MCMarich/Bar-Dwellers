@@ -4,12 +4,21 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public void SendToStirring() // Mixing -> Stirring
+    public void SendToStirring() // chagnes to stirringscene
     {
         SceneManager.LoadScene("StirringScene");
     }
-    public void SendToMixing() // Speak -> Mixing
+    public void SendToMixingEl() // changes to mixingscene
     {
-        SceneManager.LoadScene("MixingScene");
+        SceneManager.LoadScene("MixingElDiablo");
+    }
+    
+    public void SendToMixingScarlet()
+    {
+        SceneManager.LoadScene("MixingScarlet");
+    }
+    public void SendToSpeak() // changes to speakingscene
+    {
+        SceneManager.LoadScene("Speak");
     }
 }
