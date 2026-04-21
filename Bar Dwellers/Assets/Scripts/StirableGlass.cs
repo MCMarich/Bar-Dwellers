@@ -50,7 +50,6 @@ public class StirableGlass : MonoBehaviour
         if(stirBar != null) stirBar.gameObject.SetActive(false);
 
         transform.rotation = quaternion.identity;
-
         button.SetActive(true);
 
         Debug.Log("The drink is perfectly stirred!");

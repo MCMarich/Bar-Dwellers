@@ -1641,8 +1641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250, y: -100}
-  m_SizeDelta: {x: 22.57, y: 29.57}
+  m_AnchoredPosition: {x: 250, y: -86.962}
+  m_SizeDelta: {x: 15, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1390929093
 SpriteRenderer:
@@ -1693,7 +1693,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3977442400521127455, guid: b576a15b6ec72dd45993e1571bf39017, type: 3}
+  m_Sprite: {fileID: 2568174810021218873, guid: 9dc7da05c5ae777418f1691ae1bf58fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1723,7 +1723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3977442400521127455, guid: b576a15b6ec72dd45993e1571bf39017, type: 3}
+  m_Sprite: {fileID: 2568174810021218873, guid: 9dc7da05c5ae777418f1691ae1bf58fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1758,7 +1758,7 @@ MonoBehaviour:
     ingredients: 01000000000000000200000003000000
     drinkColor: {r: 0.94716984, g: 0.23854393, b: 0.2198148, a: 0}
   liquidImage: {fileID: 1390929094}
-  newSprite: {fileID: -2234155735218157593, guid: b990b2b05a58ba844a5a899a3c6804b9, type: 3}
+  newSprite: {fileID: -291978411730358551, guid: 8f07aa5f183ce654bb1bfd4714f26d94, type: 3}
   button: {fileID: 602023439}
 --- !u!1 &1572951683
 GameObject:
