@@ -320,7 +320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: -150}
+  m_AnchoredPosition: {x: 0.0000038146973, y: -150}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451002078
@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 884206887}
   - component: {fileID: 884206886}
   m_Layer: 5
-  m_Name: Tequila
+  m_Name: Cranberry Juice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1261,8 +1261,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 41.5, y: 148.29999}
+  m_AnchoredPosition: {x: 10.401792, y: 0}
+  m_SizeDelta: {x: 77.7124, y: 86.5609}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!225 &884206886
 CanvasGroup:
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1305021583, guid: 720b319dc3ab4d340954a48ebe8e0db9, type: 3}
+  m_Sprite: {fileID: 7234149852969370213, guid: 2b8e5f1c9c93cfb43858f1bfb8eb6b6c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2032,7 +2032,7 @@ GameObject:
   - component: {fileID: 1972802188}
   - component: {fileID: 1972802187}
   m_Layer: 5
-  m_Name: GBeer
+  m_Name: Lime Slice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2054,8 +2054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 41.5, y: 148.29999}
+  m_AnchoredPosition: {x: -0.00011158, y: -0}
+  m_SizeDelta: {x: 66.667, y: 58.066}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!225 &1972802187
 CanvasGroup:
@@ -2089,7 +2089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6667715888128463880, guid: 720b319dc3ab4d340954a48ebe8e0db9, type: 3}
+  m_Sprite: {fileID: 3330966248002675373, guid: dcd2a1acd756ba040a763ff4c1c253bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2425,7 +2425,7 @@ GameObject:
   - component: {fileID: 2100907826}
   - component: {fileID: 2100907825}
   m_Layer: 5
-  m_Name: CremDC
+  m_Name: Lime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2440,15 +2440,15 @@ RectTransform:
   m_GameObject: {fileID: 2100907823}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 997495768}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 41.5, y: 148.29999}
+  m_AnchoredPosition: {x: 1.4026, y: 0}
+  m_SizeDelta: {x: 97.195, y: 134.7282}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!225 &2100907825
 CanvasGroup:
@@ -2482,7 +2482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -123679929605395240, guid: 720b319dc3ab4d340954a48ebe8e0db9, type: 3}
+  m_Sprite: {fileID: -3634218419978930855, guid: 2b8e5f1c9c93cfb43858f1bfb8eb6b6c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
