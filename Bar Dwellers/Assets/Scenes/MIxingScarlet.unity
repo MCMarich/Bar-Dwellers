@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2568174810021218873, guid: 9dc7da05c5ae777418f1691ae1bf58fe, type: 3}
+  m_Sprite: {fileID: -9205499072851511358, guid: eef54cae227c8b144b2238720fc669de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 451002079}
   - component: {fileID: 451002078}
   m_Layer: 5
-  m_Name: GBeer Slot
+  m_Name: Lime Slice Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -795,7 +795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2577002758568696439, guid: 720b319dc3ab4d340954a48ebe8e0db9, type: 3}
+  m_Sprite: {fileID: 2704881118628712667, guid: 300bc06b653023f4a9cbe5e1283a5d73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7234149852969370213, guid: 2b8e5f1c9c93cfb43858f1bfb8eb6b6c, type: 3}
+  m_Sprite: {fileID: -5699047614529605022, guid: c650feea0cfa3eb4d938a7301ecd72f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 997495769}
   - component: {fileID: 997495772}
   m_Layer: 5
-  m_Name: CremDC Slot
+  m_Name: Lime Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1720,7 +1720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6016391992897111963, guid: 96c237745c7c74f4ca2fe23766ce4d10, type: 3}
+  m_Sprite: {fileID: 1832864967642992136, guid: 4d2d33ec6d409874eb4093e6902ff191, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1755,7 +1755,7 @@ MonoBehaviour:
     ingredients: 00000000010000000200000003000000
     drinkColor: {r: 0.6377357, g: 0.08543253, b: 0.08543253, a: 0}
   liquidImage: {fileID: 1390929094}
-  newSprite: {fileID: -2821149737854614191, guid: 9e6b0457782c84543bad57eee1a1af2c, type: 3}
+  newSprite: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
   button: {fileID: 602023439}
 --- !u!1 &1572951683
 GameObject:
@@ -2089,7 +2089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3330966248002675373, guid: dcd2a1acd756ba040a763ff4c1c253bd, type: 3}
+  m_Sprite: {fileID: 7092230069560822812, guid: b145c21f9ea2373478324952403cb782, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2273,7 +2273,7 @@ GameObject:
   - component: {fileID: 2006971845}
   - component: {fileID: 2006971844}
   m_Layer: 5
-  m_Name: Tequila Slot
+  m_Name: Cranberry Juice Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2482,7 +2482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3634218419978930855, guid: 2b8e5f1c9c93cfb43858f1bfb8eb6b6c, type: 3}
+  m_Sprite: {fileID: -5965737840837390663, guid: c650feea0cfa3eb4d938a7301ecd72f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
