@@ -131,8 +131,8 @@ GameObject:
   - component: {fileID: 285281100}
   - component: {fileID: 285281099}
   - component: {fileID: 285281098}
-  - component: {fileID: 285281101}
   - component: {fileID: 285281103}
+  - component: {fileID: 285281104}
   m_Layer: 5
   m_Name: Mixer
   m_TagString: Untagged
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5342562068647332158, guid: dcd2a1acd756ba040a763ff4c1c253bd, type: 3}
+  m_Sprite: {fileID: -9205499072851511358, guid: eef54cae227c8b144b2238720fc669de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -256,24 +256,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &285281101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285281095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf5e3d92264dc1b47812efb355acef66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  contents: 
-  maxCapacity: 4
-  isMixed: 0
-  shakeRequired: 500
-  shakeProgressBar: {fileID: 0}
-  canvas: {fileID: 1572951687}
 --- !u!225 &285281103
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -286,6 +268,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &285281104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285281095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fde80d8ec7a28c40b0e3350d3a74a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MixingGlass
+  contents: 
+  maxCapacity: 4
+  canvas: {fileID: 1572951687}
 --- !u!1 &451002076
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +297,7 @@ GameObject:
   - component: {fileID: 451002079}
   - component: {fileID: 451002078}
   m_Layer: 5
-  m_Name: GBeer Slot
+  m_Name: Lime Slice Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,7 +320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: -150}
+  m_AnchoredPosition: {x: 0.0000038146973, y: -150}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451002078
@@ -798,7 +795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2577002758568696439, guid: 720b319dc3ab4d340954a48ebe8e0db9, type: 3}
+  m_Sprite: {fileID: 2704881118628712667, guid: 300bc06b653023f4a9cbe5e1283a5d73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1242,7 +1239,7 @@ GameObject:
   - component: {fileID: 884206887}
   - component: {fileID: 884206886}
   m_Layer: 5
-  m_Name: Tequila
+  m_Name: Cranberry Juice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1264,8 +1261,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 41.5, y: 148.29999}
+  m_AnchoredPosition: {x: 10.401792, y: 0}
+  m_SizeDelta: {x: 77.7124, y: 86.5609}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!225 &884206886
 CanvasGroup:
@@ -1299,7 +1296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1305021583, guid: 720b319dc3ab4d340954a48ebe8e0db9, type: 3}
+  m_Sprite: {fileID: -5699047614529605022, guid: c650feea0cfa3eb4d938a7301ecd72f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1404,7 +1401,7 @@ GameObject:
   - component: {fileID: 997495769}
   - component: {fileID: 997495772}
   m_Layer: 5
-  m_Name: CremDC Slot
+  m_Name: Lime Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1616,8 +1613,8 @@ GameObject:
   - component: {fileID: 1390929092}
   - component: {fileID: 1390929093}
   - component: {fileID: 1390929095}
-  - component: {fileID: 1390929094}
   - component: {fileID: 1390929096}
+  - component: {fileID: 1390929094}
   m_Layer: 0
   m_Name: Empty_glass
   m_TagString: Untagged
@@ -1634,7 +1631,7 @@ RectTransform:
   m_GameObject: {fileID: 1390929091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 6.5, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1572951684}
@@ -1642,7 +1639,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 250, y: -100}
-  m_SizeDelta: {x: 22.57, y: 29.57}
+  m_SizeDelta: {x: 15, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1390929093
 SpriteRenderer:
@@ -1652,7 +1649,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1390929091}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1693,7 +1690,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -3977442400521127455, guid: b576a15b6ec72dd45993e1571bf39017, type: 3}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1723,7 +1720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3977442400521127455, guid: b576a15b6ec72dd45993e1571bf39017, type: 3}
+  m_Sprite: {fileID: 1832864967642992136, guid: 4d2d33ec6d409874eb4093e6902ff191, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1750,15 +1747,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1390929091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db93f52c65adca43b4fff472fd7532a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e2fd7f1e32958244a71525f4a2d6b66, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::PourGlass
   recipeBook:
-  - DrinkName: Scarlett_O_hara
-    ingredients: 03000000000000000100000002000000
-    drinkColor: {r: 0.94716984, g: 0.23854393, b: 0.2198148, a: 0}
+  - DrinkName: Scarlet_O_Hera
+    ingredients: 00000000010000000200000003000000
+    drinkColor: {r: 0.6377357, g: 0.08543253, b: 0.08543253, a: 0}
   liquidImage: {fileID: 1390929094}
-  newSprite: {fileID: -2234155735218157593, guid: b990b2b05a58ba844a5a899a3c6804b9, type: 3}
+  newSprite: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
   button: {fileID: 602023439}
 --- !u!1 &1572951683
 GameObject:
@@ -1837,7 +1834,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2035,7 +2032,7 @@ GameObject:
   - component: {fileID: 1972802188}
   - component: {fileID: 1972802187}
   m_Layer: 5
-  m_Name: GBeer
+  m_Name: Lime Slice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2057,8 +2054,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 41.5, y: 148.29999}
+  m_AnchoredPosition: {x: -0.00011158, y: -0}
+  m_SizeDelta: {x: 66.667, y: 58.066}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!225 &1972802187
 CanvasGroup:
@@ -2092,7 +2089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6667715888128463880, guid: 720b319dc3ab4d340954a48ebe8e0db9, type: 3}
+  m_Sprite: {fileID: 7092230069560822812, guid: b145c21f9ea2373478324952403cb782, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2276,7 +2273,7 @@ GameObject:
   - component: {fileID: 2006971845}
   - component: {fileID: 2006971844}
   m_Layer: 5
-  m_Name: Tequila Slot
+  m_Name: Cranberry Juice Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2428,7 +2425,7 @@ GameObject:
   - component: {fileID: 2100907826}
   - component: {fileID: 2100907825}
   m_Layer: 5
-  m_Name: CremDC
+  m_Name: Lime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2443,15 +2440,15 @@ RectTransform:
   m_GameObject: {fileID: 2100907823}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 997495768}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 41.5, y: 148.29999}
+  m_AnchoredPosition: {x: 1.4026, y: 0}
+  m_SizeDelta: {x: 97.195, y: 134.7282}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!225 &2100907825
 CanvasGroup:
@@ -2485,7 +2482,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -123679929605395240, guid: 720b319dc3ab4d340954a48ebe8e0db9, type: 3}
+  m_Sprite: {fileID: -5965737840837390663, guid: c650feea0cfa3eb4d938a7301ecd72f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

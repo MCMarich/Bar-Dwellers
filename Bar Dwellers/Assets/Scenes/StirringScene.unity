@@ -277,7 +277,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 630508229390131845, guid: dcd2a1acd756ba040a763ff4c1c253bd, type: 3}
+  m_Sprite: {fileID: 7232865409390348193, guid: b145c21f9ea2373478324952403cb782, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1375,7 +1375,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3593969639722957979, guid: 072b43a4151bcc541a7e1332dee57eef, type: 3}
+  m_Sprite: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
