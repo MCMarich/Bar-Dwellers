@@ -11,37 +11,26 @@ public enum NPCSpeech
 public class NPC : MonoBehaviour
 {
     public NPCSpeech _npcReaction;
-    [SerializeField] private UIController _dialogue;
-    [SerializeField] private NPC _currentNPC;
-    private DialogueNode _dialogueStartNode;
-    private DialogueNode _currentNode;
-    private int _currentLine = 0;
-    private bool _waitingForPlayerResponse;
+    [SerializeField] protected UIController _dialogue;
+    [SerializeField] protected NPC _currentNPC;
+    [SerializeField] protected Player _player;
+    protected DialogueNode _dialogueStartNode;
+    protected DialogueNode _currentNode;
+    protected int _currentLine = 0;
+    protected bool _waitingForPlayerResponse;
     public bool _appear = false;
 
     [SerializeField] public string _name;
-    [SerializeField] private GameObject _dialoguebox;
+    [SerializeField] protected GameObject _dialoguebox;
         // all the areas the convo can start in 
     public DialogueNode[] _dialogueStartingNodes; 
 
-    private void Awake()
+    protected virtual void Awake()
     {
-        if (_name == "FresnoNightCrawler" 
-            && Player.Instance._inventoryString.Contains("El Diablo"))
-        {
-            _currentNode = _dialogueStartingNodes[2];
-        }
-        else if(_name == "FresnoNightCrawler" && !Player.Instance._inventoryString.Contains("El Diablo") && Player.Instance._inventoryString.Count != 0)
-        {
-            _currentNode = _dialogueStartingNodes[3];
-        }
-        else
-        {
-            _currentNode = _dialogueStartingNodes[0];
-        }
+        _currentNode = _dialogueStartingNodes[0];
     }
 
-    private void Start()
+    protected virtual void Start()
     {
         if (_npcReaction == NPCSpeech.Idle) // if the NPC is in Idle then you can speak to them/ dialouge box shows up
         {
@@ -50,7 +39,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (_npcReaction == NPCSpeech.Talking // lets NPC talk only when the player lets the speech advance with button presses
             && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
@@ -88,7 +77,7 @@ public class NPC : MonoBehaviour
         AdvanceDialogue();
     }
 
-    private void EndDialogue()
+    protected void EndDialogue()
     {
         Debug.Log("ended dialogue");
         _npcReaction = NPCSpeech.Idle;
@@ -103,7 +92,7 @@ public class NPC : MonoBehaviour
     {
         _dialogue._inventorybox.SetActive(false);
         _npcReaction = NPCSpeech.Talking;
-        _currentNode = _dialogueStartingNodes[2];
+        _currentNode = _dialogueStartingNodes[1];
         _dialoguebox.SetActive(true);
     }
     
@@ -113,7 +102,7 @@ public class NPC : MonoBehaviour
     {
         _dialogue._inventorybox.SetActive(false);
         _npcReaction = NPCSpeech.Talking;
-        _currentNode = _dialogueStartingNodes[3];
+        _currentNode = _dialogueStartingNodes[2];
         _dialoguebox.SetActive(true);
     }
 
