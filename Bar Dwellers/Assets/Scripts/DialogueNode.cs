@@ -4,6 +4,7 @@ using UnityEngine;
 public class DialogueNode : ScriptableObject
 {
     public string npcName;
+    public float _npcRating;
     //for when we have more entities to choose from
     public string[] _lines;
     public string[] _playerReplyOptions;

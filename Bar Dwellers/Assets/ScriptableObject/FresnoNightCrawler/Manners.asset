@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Manners
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   npcName: FresnoNightCrawler
+  _npcRating: 0
   _lines:
   - Well don't you got some fuckin' manners?
   - Look, kid, you ever gone to get plastered in...
