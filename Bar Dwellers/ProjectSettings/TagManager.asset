@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - Rate
+  - Notebook
   layers:
   - Default
   - TransparentFX

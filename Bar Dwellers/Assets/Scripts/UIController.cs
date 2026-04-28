@@ -4,6 +4,8 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
     [SerializeField] public GameObject _inventorybox;
+    [SerializeField] public GameObject _uparrow;
+    [SerializeField] public GameObject _downarrow;
     private bool _boxActive = false;
     // dialogue UI
     [SerializeField] private GameObject _dialogueBox;
@@ -12,17 +14,23 @@ public class UIController : MonoBehaviour
     [SerializeField] private TMP_Text _option1;
     [SerializeField] private TMP_Text _option2;
     [SerializeField] private TMP_Text _option3;
+    [SerializeField] private GameObject _notebook1;
+    [SerializeField] private GameObject _notebook2;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I) && _boxActive == false)
         {
             _inventorybox.SetActive(true);
+            _uparrow.SetActive(true);
+            _downarrow.SetActive(true);
             _boxActive = true;
         }
         else if (Input.GetKeyDown(KeyCode.I) && _boxActive == true)
         {
             _inventorybox.SetActive(false);
+            _uparrow.SetActive(false);
+            _downarrow.SetActive(false);
             _boxActive = false;
         }
     }
@@ -66,6 +74,19 @@ public class UIController : MonoBehaviour
         else
         {
             _option3.transform.parent.gameObject.SetActive(false);
+        }
+    }
+    public void ReplaceInstance()
+    {
+        if(_notebook1.activeSelf)
+        {
+            _notebook1.SetActive(false);
+            _notebook2.SetActive(true);
+        }
+        else if(_notebook2.activeSelf)
+        {
+            _notebook2.SetActive(false);
+            _notebook1.SetActive(true);
         }
     }
 
