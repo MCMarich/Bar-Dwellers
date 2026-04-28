@@ -11,6 +11,9 @@ public class StirableGlass : MonoBehaviour
     public bool isStirred = false;
     public GameObject button;
 
+    public AudioSource audioSource;
+    public AudioClip stirSound;
+
     private RectTransform rectTransform;
     private Vector2 originalPos;
     private Vector3 originalScale;
@@ -24,6 +27,14 @@ public class StirableGlass : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
         originalPos = rectTransform.anchoredPosition;
         originalScale = rectTransform.localScale;
+
+        if (audioSource != null && stirSound != null)
+        {
+            audioSource.clip = stirSound;
+            audioSource.loop = true;
+            audioSource.playOnAwake = false;
+            audioSource.volume = 0;
+        }
     }
     public void Stir(float amount)
     {
@@ -32,6 +43,13 @@ public class StirableGlass : MonoBehaviour
         currentStirProgress += amount;
 
         currentMovement = Mathf.Clamp(currentMovement + (amount * 0.1f), 0, 1f);
+
+        if (!audioSource.isPlaying && currentMovement > 0.1f)
+        {
+            audioSource.Play();
+            audioSource.volume = 0.5f;
+        }
+
 
         if (stirBar != null)
         {
@@ -47,6 +65,7 @@ public class StirableGlass : MonoBehaviour
     void FinishDrink()
     {
         isStirred = true;
+        audioSource.Stop();
         if(stirBar != null) stirBar.gameObject.SetActive(false);
 
         transform.rotation = quaternion.identity;

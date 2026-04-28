@@ -9,6 +9,8 @@ using System.Collections;
 
 public class PourGlass : MonoBehaviour, IDropHandler
 {
+    public AudioSource audioSource;
+    public AudioClip pourSound;
     public List<Recipe> recipeBook;
     public Image liquidImage;
     public Sprite newSprite;
@@ -20,6 +22,10 @@ public class PourGlass : MonoBehaviour, IDropHandler
 
         if(mixingGlass != null)
         {
+            if (audioSource != null && pourSound != null)
+            {
+                audioSource.PlayOneShot(pourSound);
+            }
             CreateDrink(mixingGlass.contents);
 
             mixingGlass.contents.Clear();

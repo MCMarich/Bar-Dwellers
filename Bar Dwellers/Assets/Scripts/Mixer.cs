@@ -6,6 +6,8 @@ using System.Collections.Generic;
 
 public class Mixer : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IDropHandler
 {
+    public AudioClip shaking;
+    private AudioSource audioSource;
     [Header("Ingredients")]
     public List<DrinkType> contents = new List<DrinkType>();
     public int maxCapacity = 2;
@@ -28,6 +30,12 @@ public class Mixer : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         originalPosition = rectTransform.anchoredPosition;
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = shaking;
+        audioSource.loop = true;
+        audioSource.playOnAwake = false;
+        audioSource.time = 0.5f;
     }
 
     // This happens the moment you click to drag
@@ -61,6 +69,12 @@ public class Mixer : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
         if (mouseDelta > 0)
         {
             currentShakeProgress += mouseDelta;
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+
+            audioSource.volume = 1f;
             if (shakeProgressBar != null)
             {
                 shakeProgressBar.gameObject.SetActive(true);
@@ -69,6 +83,10 @@ public class Mixer : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
 
             // Visual wiggle: move slightly away from original position and back
             rectTransform.anchoredPosition = originalPosition + new Vector2(Random.Range(-5f, 5f), Random.Range(-5f, 5f));
+        }
+        else
+        {
+            audioSource.volume = 0f;
         }
 
         lastMousePos = currentMousePos;
@@ -82,6 +100,7 @@ public class Mixer : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     private void FinishMixing()
     {
         isMixed = true;
+        audioSource.Stop();
         rectTransform.anchoredPosition = originalPosition; // Snap back to center
         if (shakeProgressBar != null) shakeProgressBar.gameObject.SetActive(false);
         Debug.Log("Mixing Complete! Now drag to the glass.");
@@ -91,6 +110,8 @@ public class Mixer : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
     {
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
+
+        audioSource.Stop();
 
         // If it's not dropped on a glass, return to its slot
         if (!isMixed || transform.parent == canvas.transform)
