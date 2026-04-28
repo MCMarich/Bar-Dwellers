@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Wrong
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   npcName: FresnoNightCrawler
+  _npcRating: 2.5
   _lines:
   - This is bullshit...
   - This place sucks...

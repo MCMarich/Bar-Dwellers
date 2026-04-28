@@ -15,10 +15,11 @@ public class NPC : MonoBehaviour
     [SerializeField] protected NPC _currentNPC;
     [SerializeField] protected Player _player;
     protected DialogueNode _dialogueStartNode;
-    protected DialogueNode _currentNode;
+    public DialogueNode _currentNode;
     protected int _currentLine = 0;
     protected bool _waitingForPlayerResponse;
     public bool _appear = false;
+    private float _ratingChange;
 
     [SerializeField] public string _name;
     [SerializeField] protected GameObject _dialoguebox;
@@ -79,31 +80,29 @@ public class NPC : MonoBehaviour
 
     protected void EndDialogue()
     {
+        _ratingChange = _currentNode._npcRating;
+        Debug.Log("Rating change: " + _ratingChange);
+        if (_ratingChange != 0.0f)
+        {
+            Player.Instance._rating = (Player.Instance._rating + _ratingChange) / 2;
+            Player.Instance._rating = Mathf.Round(Player.Instance._rating * 10f) / 10f; // round to 1 decimal place
+            if (Player.Instance._rating > 5.0f)
+            {
+                Player.Instance._rating = 5.0f;
+            }
+            else if (Player.Instance._rating < 0.0f)
+            {
+                Player.Instance._rating = 0.0f;
+            }
+
+            Player.Instance._ratingText.text = "Rating: " + Player.Instance._rating.ToString() + "/5";
+        }
         Debug.Log("ended dialogue");
         _npcReaction = NPCSpeech.Idle;
         _dialoguebox.SetActive(false);
         _waitingForPlayerResponse = false;
         _currentNode = _dialogueStartNode;
         _currentLine = 0;
-    }
-
-    // If the drink you choose for the patron is correct
-    public void Correct()
-    {
-        _dialogue._inventorybox.SetActive(false);
-        _npcReaction = NPCSpeech.Talking;
-        _currentNode = _dialogueStartingNodes[1];
-        _dialoguebox.SetActive(true);
-    }
-    
-    // If the drink you choose for the patron is wrong
-
-    public void Wrong()
-    {
-        _dialogue._inventorybox.SetActive(false);
-        _npcReaction = NPCSpeech.Talking;
-        _currentNode = _dialogueStartingNodes[2];
-        _dialoguebox.SetActive(true);
     }
 
     public NPC getNPC()
