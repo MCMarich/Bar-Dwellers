@@ -30,7 +30,7 @@ MonoBehaviour:
     m_path: Assets/Scenes/StirringScene.unity
     m_guid: e9024209a2413014abc39d238e7d84aa
   - m_enabled: 1
-    m_path: Assets/Scenes/MixingScarlet.unity
+    m_path: Assets/Scenes/MIxingScarlet.unity
     m_guid: 2424352bb7ab5b74480acb09d7e65990
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []

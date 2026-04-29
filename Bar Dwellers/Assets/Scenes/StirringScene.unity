@@ -650,7 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   canvas: {fileID: 405697992}
   targetDrink: {fileID: 1888415985}
-  stirRadius: 300
+  stirRadius: 250
 --- !u!1 &1334577188
 GameObject:
   m_ObjectHideFlags: 0

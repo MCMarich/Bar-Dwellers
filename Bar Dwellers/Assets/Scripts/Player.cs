@@ -36,13 +36,16 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(_ratingText == null && SceneManager.GetActiveScene().name == "Speak")
+        if(SceneManager.GetActiveScene().name == "Speak")
         {
-            _ratingText = GameObject.FindWithTag("Rate").GetComponent<TMP_Text>();
-        }
-        if (_ratingText.text == "New Text")
-        {
-            _ratingText.text = "Rating: " + _rating.ToString() + "/5";
+            if(_ratingText == null)
+            {
+                _ratingText = GameObject.FindWithTag("Rate").GetComponent<TMP_Text>();
+            }
+            if (_ratingText.text == "New Text")
+            {
+                _ratingText.text = "Rating: " + _rating.ToString() + "/5";
+            }
         }
 }
 }
