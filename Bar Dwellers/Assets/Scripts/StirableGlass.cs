@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class StirableGlass : MonoBehaviour
 {
+    [Header("Images")]
+    public Image liquidImage;
+    public Sprite Mojito;
+    public Sprite Scarlet;
+
     [Header("Stir Settings")]
     public float StirRequired = 1000f;
     private float currentStirProgress = 0f;
@@ -27,6 +32,15 @@ public class StirableGlass : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
         originalPos = rectTransform.anchoredPosition;
         originalScale = rectTransform.localScale;
+        if (Player.Instance._inventoryString.Contains("Scarlet_O_Hera"))
+        {
+            liquidImage.sprite = Scarlet;
+        }
+        else if (Player.Instance._inventoryString.Contains("Bluberry Mojito"))
+        {
+            liquidImage.sprite = Mojito;
+        }
+        else if (Player.Instance._inventoryString.Contains("Moscow Mule"))
 
         if (audioSource != null && stirSound != null)
         {

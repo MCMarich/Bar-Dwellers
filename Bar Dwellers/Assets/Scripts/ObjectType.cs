@@ -7,7 +7,14 @@ public enum DrinkType
     GingerBeer,
     Tequila,
     Spoon,
-    
+    Lime,
     Anything,
+    Cranberry,
+    LimeJuice,
+    ClubSoda,
+    Mint,
+    Blueberry,
+    Rum,
+    Vodka,
 
 }

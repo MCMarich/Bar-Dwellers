@@ -1331,7 +1331,7 @@ GameObject:
   - component: {fileID: 1888415985}
   - component: {fileID: 1888415986}
   m_Layer: 5
-  m_Name: Scarlett O'hara
+  m_Name: StirrableDrink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1406,6 +1406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a011f5c32a9de724aaf9ec9afa7120ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  liquidImage: {fileID: 1888415983}
+  Mojito: {fileID: -2234155735218157593, guid: b990b2b05a58ba844a5a899a3c6804b9, type: 3}
+  Scarlet: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
   StirRequired: 1000
   isStirred: 0
   button: {fileID: 1694111167}

@@ -12,6 +12,11 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("MixingElDiablo");
     }
+
+    public void SendToMixingMoscow()
+    {
+        SceneManager.LoadScene("MixingMoscow");
+    }
     
     public void SendToMixingScarlet()
     {
