@@ -1663,8 +1663,8 @@ MonoBehaviour:
   audioSource: {fileID: 1390929097}
   pourSound: {fileID: 8300000, guid: f08a7ade5d58d284897aa97c59c75c66, type: 3}
   recipeBook:
-  - DrinkName: Bluberry Mojito
-    ingredients: 00000000010000000200000003000000
+  - DrinkName: Moscow Mule
+    ingredients: 02000000050000000d00000008000000
     drinkColor: {r: 0.6377357, g: 0.08543253, b: 0.08543253, a: 0}
   liquidImage: {fileID: 1390929094}
   newSprite: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
