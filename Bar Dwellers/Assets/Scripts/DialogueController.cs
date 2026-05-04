@@ -1,6 +1,9 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
+
 //using static UnityEditor.Progress;
+using UnityEngine.Timeline;
 
 
 public class DialogueController : MonoBehaviour
@@ -73,4 +76,5 @@ public class DialogueController : MonoBehaviour
         _currentNode = _currentNode._npcReplies[option];
         AdvanceDialogue();
     }
+    
 }
