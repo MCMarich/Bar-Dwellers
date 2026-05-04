@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("StirringScene");
     }
+
     public void SendToMixingEl() // changes to mixingscene
     {
         SceneManager.LoadScene("MixingElDiablo");
@@ -17,13 +18,24 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("MixingMoscow");
     }
-    
+
+    public void SendToMixingMojito()
+    {
+        SceneManager.LoadScene("MixingMoscow");
+    }
+
     public void SendToMixingScarlet()
     {
         SceneManager.LoadScene("MixingScarlet");
     }
+
     public void SendToSpeak() // changes to speakingscene
     {
         SceneManager.LoadScene("Speak");
+    }
+
+    public void SendToYouDied()
+    {
+        SceneManager.LoadScene("YouDied");
     }
 }

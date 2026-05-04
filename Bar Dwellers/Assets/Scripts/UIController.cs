@@ -29,6 +29,7 @@ public class UIController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.I) && _boxActive == true)
         {
             _inventorybox.SetActive(false);
+            _notebook2.SetActive(false);
             _uparrow.SetActive(false);
             _downarrow.SetActive(false);
             _boxActive = false;
