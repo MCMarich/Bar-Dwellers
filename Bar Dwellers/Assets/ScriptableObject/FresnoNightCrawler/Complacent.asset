@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Complacent
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   npcName: FresnoNightCrawler
+  _npcRating: 0
+  _isFinalNode: 0
   _lines:
   - Not like you're missing much...
   - But I feel you should check it out.
