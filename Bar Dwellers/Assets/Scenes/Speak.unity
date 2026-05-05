@@ -2899,6 +2899,7 @@ MonoBehaviour:
   _dialogue: {fileID: 767432171}
   _currentNPC: {fileID: 1668817640}
   _player: {fileID: 1249751362}
+  _cutscene: {fileID: 900094118}
   _currentNode: {fileID: 0}
   _appear: 0
   _name: FresnoNightCrawler

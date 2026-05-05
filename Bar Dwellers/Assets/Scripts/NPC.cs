@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
@@ -14,6 +15,7 @@ public class NPC : MonoBehaviour
     [SerializeField] protected UIController _dialogue;
     [SerializeField] protected NPC _currentNPC;
     [SerializeField] protected Player _player;
+    [SerializeField] private PlayableDirector _cutscene;
     protected DialogueNode _dialogueStartNode;
     public DialogueNode _currentNode;
     protected int _currentLine = 0;
@@ -96,6 +98,10 @@ public class NPC : MonoBehaviour
             }
 
             Player.Instance._ratingText.text = "Rating: " + Player.Instance._rating.ToString() + "/5";
+        }
+        if(_currentNode._isFinalNode == true)
+        {
+            _cutscene.Play();
         }
         Debug.Log("ended dialogue");
         _npcReaction = NPCSpeech.Idle;

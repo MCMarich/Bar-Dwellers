@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   npcName: FresnNightCrawler
   _npcRating: 4
+  _isFinalNode: 1
   _lines:
   - Ah, there we fuckin' go!
   - Hey, kid, if you see any dead fascists around tomorrow...

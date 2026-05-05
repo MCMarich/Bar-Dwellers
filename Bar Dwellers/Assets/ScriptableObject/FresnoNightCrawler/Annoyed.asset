@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Annoyed
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   npcName: FresnoNightCrawler
+  _npcRating: 0
+  _isFinalNode: 0
   _lines:
   - Whatever, that's something a poser would say...
   - Just get me something with edge, Poser.
