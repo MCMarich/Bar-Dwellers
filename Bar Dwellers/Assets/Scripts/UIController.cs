@@ -78,8 +78,7 @@ public class UIController : MonoBehaviour
     }
     public void ReplaceInstance()
     {
-        Debug.Log("I got you");
-        if (_notebook1.activeSelf)
+        if(_notebook1.activeSelf)
         {
             _notebook1.SetActive(false);
             _notebook2.SetActive(true);
