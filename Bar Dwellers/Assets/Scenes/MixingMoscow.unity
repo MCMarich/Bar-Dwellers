@@ -986,8 +986,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7004700785787463364, guid: 9178ace3d6a924940bbe550befe432e8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1541,7 +1541,7 @@ RectTransform:
   m_GameObject: {fileID: 1390929091}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.5, y: 6, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1572951684}
@@ -1549,7 +1549,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 250, y: -100}
-  m_SizeDelta: {x: 15, y: 40}
+  m_SizeDelta: {x: 150, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1390929093
 SpriteRenderer:
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1832864967642992136, guid: 4d2d33ec6d409874eb4093e6902ff191, type: 3}
+  m_Sprite: {fileID: 7563268016470972183, guid: 8c0e97a2f6e8b96469747d9972daccd6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1667,7 +1667,7 @@ MonoBehaviour:
     ingredients: 02000000050000000d00000008000000
     drinkColor: {r: 0.6377357, g: 0.08543253, b: 0.08543253, a: 0}
   liquidImage: {fileID: 1390929094}
-  newSprite: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
+  newSprite: {fileID: -3230597364664776598, guid: 591d0a1439d844441ac6597f1f357526, type: 3}
   button: {fileID: 602023439}
 --- !u!82 &1390929097
 AudioSource:

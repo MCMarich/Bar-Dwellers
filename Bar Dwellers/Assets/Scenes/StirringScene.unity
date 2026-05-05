@@ -304,7 +304,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_UseReflectionProbes: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1087,8 +1087,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7004700785787463364, guid: 9178ace3d6a924940bbe550befe432e8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1407,8 +1407,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   liquidImage: {fileID: 1888415983}
-  Mojito: {fileID: -2234155735218157593, guid: b990b2b05a58ba844a5a899a3c6804b9, type: 3}
+  Mojito: {fileID: -6899263452236876038, guid: 4a2f6619c12dae049a580902d4737a83, type: 3}
   Scarlet: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
+  Moscow: {fileID: 0}
   StirRequired: 1000
   isStirred: 0
   button: {fileID: 1694111167}

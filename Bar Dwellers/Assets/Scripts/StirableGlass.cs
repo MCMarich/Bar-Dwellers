@@ -9,6 +9,7 @@ public class StirableGlass : MonoBehaviour
     public Image liquidImage;
     public Sprite Mojito;
     public Sprite Scarlet;
+    public Sprite Moscow;
 
     [Header("Stir Settings")]
     public float StirRequired = 1000f;
@@ -41,6 +42,9 @@ public class StirableGlass : MonoBehaviour
             liquidImage.sprite = Mojito;
         }
         else if (Player.Instance._inventoryString.Contains("Moscow Mule"))
+        {
+            liquidImage.sprite = Moscow;
+        }
 
         if (audioSource != null && stirSound != null)
         {
