@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Fun
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Loveland Frog
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - YOU know exactly what I'm talking about.
+  _playerReplyOptions:
+  - Nope.
+  - Well, I MIGHT know...
+  - I'll meet you outside.
+  _npcReplies:
+  - {fileID: 11400000, guid: f7dd5dbba68842b4081a0ce6bd16a471, type: 2}
+  - {fileID: 11400000, guid: 632abe18ae930664882df2a2918f0162, type: 2}
+  - {fileID: 11400000, guid: c69ddaa2a7684cc43912b2f0bd40e6c0, type: 2}

@@ -3,8 +3,13 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
+public enum Mission
+{
+    One, Two, Three, Four, Five
+}
 public class Player : MonoBehaviour
 {
+    public Mission _currentMission;
     [SerializeField] public TMP_Text _ratingText;
     private NPC _npc;
     public delegate void ObjectDelegate(GameObject o);

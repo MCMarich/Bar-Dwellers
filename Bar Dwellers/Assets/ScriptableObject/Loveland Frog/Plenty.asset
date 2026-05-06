@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Plenty
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Loveland Frog
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Maybe.
+  - But if you're like me...
+  - You'll know that you can never truly have "too much".
+  - Nothing more intimate than being surrounded by those who adore you.
+  - And who knows...
+  - Maybe some day...
+  - That love will be staring out you right in the face.
+  _playerReplyOptions:
+  - I just work here.
+  - What if you're wrong?
+  _npcReplies:
+  - {fileID: 11400000, guid: 6eb28c06e6da8044a8b67fbb90f12ac0, type: 2}
+  - {fileID: 11400000, guid: dcea507f0226dcf4294866eb51c7b4bd, type: 2}
