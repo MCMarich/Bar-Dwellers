@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Oops
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Loveland Frog
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Seriously?
+  - Like that?
+  - No foreplay, no nothin?
+  - Gurl, you crazy.
+  - A lawn chair wouldn't fold as quickly.
+  _playerReplyOptions:
+  - I was following your lead.
+  - Pssh, whatever.
+  - Can I be your lawn chair?
+  _npcReplies:
+  - {fileID: 11400000, guid: e1838e25bf76cb241a2d84f22d2d6f79, type: 2}
+  - {fileID: 11400000, guid: 1da546eafd6423f41a8400c3b688d7cd, type: 2}
+  - {fileID: 11400000, guid: 1af50ac101ebdca47bec54d5647e9886, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Wine
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Loveland Frog
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Finally, someone sees me for my natural beauty.
+  - If you keep saying things like that...
+  - There may be more in store for you.
+  - Just something to think about.
+  - Now go get me a drink.
+  _playerReplyOptions: []
+  _npcReplies: []

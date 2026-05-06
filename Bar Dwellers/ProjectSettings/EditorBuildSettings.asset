@@ -17,5 +17,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MixingElDiablo.unity
     guid: 0c0d80872588ef14c96156900f415464
+  - enabled: 1
+    path: Assets/Scenes/MixingMojito.unity
+    guid: 8500f90dc662b9245ad6d6f5e21f2e96
+  - enabled: 1
+    path: Assets/Scenes/MixingMoscow.unity
+    guid: b980af502a57595428ee27ded37eef93
+  - enabled: 1
+    path: Assets/Scenes/MIxingScarlet.unity
+    guid: 2424352bb7ab5b74480acb09d7e65990
+  - enabled: 1
+    path: Assets/Scenes/YouDied.unity
+    guid: aec61240f5ca88a4d8f6d77be260be33
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

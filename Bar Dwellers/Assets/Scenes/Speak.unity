@@ -1038,7 +1038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!320 &819543926
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -2735,8 +2735,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1668817640}
-        m_TargetAssemblyTypeName: FresnoNightCrawler, Assembly-CSharp
+      - m_Target: {fileID: 1964224224}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: SelectedOption
         m_Mode: 3
         m_Arguments:
@@ -3043,8 +3043,8 @@ GameObject:
   - component: {fileID: 1668817635}
   - component: {fileID: 1668817634}
   - component: {fileID: 1668817639}
-  - component: {fileID: 1668817640}
   - component: {fileID: 1668817641}
+  - component: {fileID: 1668817642}
   m_Layer: 0
   m_Name: FresnoNightCrawler
   m_TagString: NPC
@@ -3163,31 +3163,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 6.952794, y: 11.73}
   m_Direction: 0
---- !u!114 &1668817640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668817633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3996662121ad24ab8204b32a8b9178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FresnoNightCrawler
-  _npcReaction: 0
-  _dialogue: {fileID: 767432171}
-  _currentNPC: {fileID: 1668817640}
-  _player: {fileID: 1249751362}
-  _cutscene: {fileID: 900094118}
-  _currentNode: {fileID: 0}
-  _appear: 0
-  _name: FresnoNightCrawler
-  _dialoguebox: {fileID: 179812866}
-  _dialogueStartingNodes:
-  - {fileID: 11400000, guid: 30d9a927cf3c3eb488963a21647838d0, type: 2}
-  - {fileID: 11400000, guid: c2e50e470344fed4687266acc0c0a2f5, type: 2}
-  - {fileID: 11400000, guid: eac60fcd8817ddc459e5fb046fc4ecaf, type: 2}
 --- !u!95 &1668817641
 Animator:
   serializedVersion: 7
@@ -3210,6 +3185,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1668817642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668817633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c3996662121ad24ab8204b32a8b9178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FresnoNightCrawler
+  _npcReaction: 0
+  _player: {fileID: 1249751362}
+  _cutscene: {fileID: 900094118}
+  _reset: {fileID: 1666121426}
+  _dialogueController: {fileID: 1964224224}
+  _appear: 0
+  _name: FresnoNightCrawler
+  _dialoguebox: {fileID: 179812866}
+  _dialogueStartingNodes:
+  - {fileID: 11400000, guid: 30d9a927cf3c3eb488963a21647838d0, type: 2}
+  - {fileID: 11400000, guid: c2e50e470344fed4687266acc0c0a2f5, type: 2}
+  - {fileID: 11400000, guid: eac60fcd8817ddc459e5fb046fc4ecaf, type: 2}
 --- !u!1 &1705487589
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,8 +3452,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1668817640}
-        m_TargetAssemblyTypeName: FresnoNightCrawler, Assembly-CSharp
+      - m_Target: {fileID: 1964224224}
+        m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
         m_MethodName: SelectedOption
         m_Mode: 3
         m_Arguments:
@@ -3477,6 +3476,8 @@ GameObject:
   - component: {fileID: 1878209043}
   - component: {fileID: 1878209042}
   - component: {fileID: 1878209045}
+  - component: {fileID: 1878209046}
+  - component: {fileID: 1878209047}
   m_Layer: 0
   m_Name: Loveland Frog
   m_TagString: NPC
@@ -3617,6 +3618,50 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1878209046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878209041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee246e70dfcaab42bec1cb275068a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LovelandFrog
+  _npcReaction: 0
+  _player: {fileID: 1249751362}
+  _cutscene: {fileID: 819543926}
+  _reset: {fileID: 1666121426}
+  _dialogueController: {fileID: 1964224224}
+  _appear: 0
+  _name: Loveland Frog
+  _dialoguebox: {fileID: 179812866}
+  _dialogueStartingNodes:
+  - {fileID: 11400000, guid: fb75ac5cf37a7514eb8fb533d0e753c2, type: 2}
+--- !u!114 &1878209047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878209041}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc818da1d50cdf64fb8e0edd2897e0af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
+  _npcReaction: 0
+  _player: {fileID: 1249751362}
+  _cutscene: {fileID: 819543926}
+  _reset: {fileID: 1666121426}
+  _dialogueController: {fileID: 1964224224}
+  _appear: 0
+  _name: Loveland Frog
+  _dialoguebox: {fileID: 179812866}
+  _dialogueStartingNodes:
+  - {fileID: 11400000, guid: fb75ac5cf37a7514eb8fb533d0e753c2, type: 2}
 --- !u!1 &1897731472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,6 +3946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1964224222}
   - component: {fileID: 1964224223}
+  - component: {fileID: 1964224224}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3935,6 +3981,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
+--- !u!114 &1964224224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964224221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30b2e6f82b892c4a88b7bf71b939b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueController
+  _dialogue: {fileID: 767432171}
+  _currentNPC: {fileID: 0}
+  _currentNode: {fileID: 0}
+  _appear: 0
 --- !u!1 &1972204249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4451,7 +4513,7 @@ PrefabInstance:
     - target: {fileID: 590633396396532135, guid: c50463d05be3c84409d5b9521274c730, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1668817640}
+      objectReference: {fileID: 1964224224}
     - target: {fileID: 590633396396532135, guid: c50463d05be3c84409d5b9521274c730, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -4462,7 +4524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 590633396396532135, guid: c50463d05be3c84409d5b9521274c730, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: FresnoNightCrawler, Assembly-CSharp
+      value: DialogueController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 590633396396532135, guid: c50463d05be3c84409d5b9521274c730, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Loveland Frog
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Watchu lookin' at, hot stuff?
+  - Him and I go way back, you know.
+  - He may not seem like it, but the old bastard's tough as nails.
+  - He'll be back on his feet in no time.
+  - I mean he has to be...
+  - He doesn't really got other limbs.
+  - So how 'bout you forget about that prick so we can get down on some real fun...
+  _playerReplyOptions:
+  - Sorry I'm on business.
+  - What kind of fun?
+  - I wanna know more about you two.
+  _npcReplies:
+  - {fileID: 11400000, guid: 6eb28c06e6da8044a8b67fbb90f12ac0, type: 2}
+  - {fileID: 11400000, guid: 96b4d5e46fc0bff4fa4c938772a5cc8e, type: 2}
+  - {fileID: 11400000, guid: 24925aca0a4ac524eb7ffa16c1278a62, type: 2}
