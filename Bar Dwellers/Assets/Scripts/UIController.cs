@@ -1,5 +1,7 @@
+using NUnit.Framework;
 using TMPro;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class UIController : MonoBehaviour
 {
@@ -14,8 +16,8 @@ public class UIController : MonoBehaviour
     [SerializeField] private TMP_Text _option1;
     [SerializeField] private TMP_Text _option2;
     [SerializeField] private TMP_Text _option3;
-    [SerializeField] private GameObject _notebook1;
-    [SerializeField] private GameObject _notebook2;
+    [SerializeField] private List<GameObject> _notebooks;
+    private int i = 0;
 
     private void Update()
     {
@@ -25,11 +27,12 @@ public class UIController : MonoBehaviour
             _uparrow.SetActive(true);
             _downarrow.SetActive(true);
             _boxActive = true;
+            Debug.Log(i);
         }
         else if (Input.GetKeyDown(KeyCode.I) && _boxActive == true)
         {
             _inventorybox.SetActive(false);
-            _notebook2.SetActive(false);
+            _notebooks[0].SetActive(false);
             _uparrow.SetActive(false);
             _downarrow.SetActive(false);
             _boxActive = false;
@@ -77,18 +80,26 @@ public class UIController : MonoBehaviour
             _option3.transform.parent.gameObject.SetActive(false);
         }
     }
-    public void ReplaceInstance()
+    public void Up()
     {
-        if(_notebook1.activeSelf)
+        i += 1;
+        if (i > (_notebooks.Count - 1))
         {
-            _notebook1.SetActive(false);
-            _notebook2.SetActive(true);
+            i = 0;
         }
-        else if(_notebook2.activeSelf)
+        _notebooks[i - 1].SetActive(false);
+        _notebooks[i].SetActive(true);
+    }
+
+    public void Down()
+    {
+        i -= 1;
+        if (i < 0)
         {
-            _notebook2.SetActive(false);
-            _notebook1.SetActive(true);
+            i = _notebooks.Count - 1;
         }
+        _notebooks[i + 1].SetActive(false);
+        _notebooks[i].SetActive(true);
     }
 
     public void HideDialogue()

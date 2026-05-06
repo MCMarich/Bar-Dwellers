@@ -34,6 +34,7 @@ public class LovelandFrog : NPC
         _delaytimer -= Time.deltaTime;
         if (_delaytimer <= 0.0f)
         {
+            _player._currentMission = Mission.Two;
             base.Start();
         }
         base.Update();

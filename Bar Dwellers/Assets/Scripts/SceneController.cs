@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    public string _scene;
     public void SendToStirring() // chagnes to stirringscene
     {
         SceneManager.LoadScene("StirringScene");
