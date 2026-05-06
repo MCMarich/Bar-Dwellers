@@ -3270,7 +3270,6 @@ GameObject:
   - component: {fileID: 1668817639}
   - component: {fileID: 1668817641}
   - component: {fileID: 1668817642}
-  - component: {fileID: 1668817643}
   m_Layer: 0
   m_Name: FresnoNightCrawler
   m_TagString: NPC
@@ -3436,18 +3435,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 30d9a927cf3c3eb488963a21647838d0, type: 2}
   - {fileID: 11400000, guid: c2e50e470344fed4687266acc0c0a2f5, type: 2}
   - {fileID: 11400000, guid: eac60fcd8817ddc459e5fb046fc4ecaf, type: 2}
---- !u!114 &1668817643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668817633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420fe9456f7ddf941a30b3e932190b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DontDestroy
+  scenecontroller: {fileID: 1964224223}
 --- !u!1 &1705487589
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,6 +4462,7 @@ GameObject:
   - component: {fileID: 1964224223}
   - component: {fileID: 1964224224}
   - component: {fileID: 1964224225}
+  - component: {fileID: 1964224226}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4508,7 +4497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
-  _scene: 
+  scene: {}
 --- !u!114 &1964224224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4539,6 +4528,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameController
   _npc: {fileID: 1878209041}
   _player: {fileID: 1249751362}
+--- !u!114 &1964224226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964224221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 420fe9456f7ddf941a30b3e932190b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DontDestroy
 --- !u!1 &1972204249
 GameObject:
   m_ObjectHideFlags: 0

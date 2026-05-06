@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public string _scene;
+    public UnityEngine.SceneManagement.Scene scene;
     public void SendToStirring() // chagnes to stirringscene
     {
         SceneManager.LoadScene("StirringScene");
@@ -32,11 +32,15 @@ public class SceneController : MonoBehaviour
 
     public void SendToSpeak() // changes to speakingscene
     {
-        SceneManager.LoadScene("Speak");
+        SceneManager.LoadScene(scene.name);
     }
 
     public void SendToYouDied()
     {
         SceneManager.LoadScene("YouDied");
+    }
+    void Awake()
+    {
+        Debug.Log("Saved Scene Name: " + scene.name);
     }
 }

@@ -1,12 +1,14 @@
 using System.Buffers.Text;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class FresnoNightCrawler : NPC
 {
+    public SceneController scenecontroller;
     protected override void Awake()
     {
         GameObject playerObject = GameObject.FindWithTag("Player");
         _player = playerObject.GetComponent<Player>();
+        scenecontroller.scene = SceneManager.GetActiveScene();
 
         if (_player._currentMission != Mission.One)
         {

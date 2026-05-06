@@ -30,7 +30,7 @@ public class NPC : MonoBehaviour
 
     protected virtual void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         _dialogueController._currentNode = _dialogueStartingNodes[0];
     }
 
