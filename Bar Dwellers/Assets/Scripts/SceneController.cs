@@ -1,10 +1,43 @@
+using System;
 using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public UnityEngine.SceneManagement.Scene scene;
+    public static SceneController Instance;
+    
+    private string currentSpeakScene;
+
+    private void Awake() {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void MarkCurrentSpeak()
+    {
+        currentSpeakScene = SceneManager.GetActiveScene().name;
+        Debug.Log("Marked " + currentSpeakScene + " as the current speak scene");
+    }
+
+    public void ReturnSpeak()
+    {
+        if (!string.IsNullOrEmpty(currentSpeakScene))
+        {
+            SceneManager.LoadScene(currentSpeakScene);
+        }
+        else
+        {
+            Debug.LogError("No return scene saved!");
+        }
+    }
     public void SendToStirring() // chagnes to stirringscene
     {
         SceneManager.LoadScene("StirringScene");
@@ -30,17 +63,8 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("MixingScarlet");
     }
 
-    public void SendToSpeak() // changes to speakingscene
-    {
-        SceneManager.LoadScene(scene.name);
-    }
-
     public void SendToYouDied()
     {
         SceneManager.LoadScene("YouDied");
-    }
-    void Awake()
-    {
-        Debug.Log("Saved Scene Name: " + scene.name);
     }
 }

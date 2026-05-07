@@ -8,7 +8,6 @@ public class FresnoNightCrawler : NPC
     {
         GameObject playerObject = GameObject.FindWithTag("Player");
         _player = playerObject.GetComponent<Player>();
-        scenecontroller.scene = SceneManager.GetActiveScene();
 
         if (_player._currentMission != Mission.One)
         {

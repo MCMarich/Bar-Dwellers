@@ -1608,9 +1608,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1964224223}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: SendToMixingScarlet
+      - m_Target: {fileID: 1142809810}
+        m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
+        m_MethodName: GoToMixingScarlet
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1620,6 +1620,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1142809810 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5698033903936601921, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+  m_PrefabInstance: {fileID: 4681368119827878039}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a5b78dbdcd57c43b2756d7abaa8795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1155150528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3783,9 +3794,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1964224223}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: SendToMixingMoscow
+      - m_Target: {fileID: 1142809810}
+        m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
+        m_MethodName: GoToMixingMoscow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4497,7 +4508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
-  scene: {}
 --- !u!114 &1964224224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4824,9 +4834,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1964224223}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: SendToMixingEl
+      - m_Target: {fileID: 1142809810}
+        m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
+        m_MethodName: GoToMixingEl
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5854,6 +5864,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129011920363226382}
   m_CullTransparentMesh: 1
+--- !u!1001 &4681368119827878039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5712380199488728680, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_Name
+      value: SceneProxySpeak
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
 --- !u!114 &4806118808922069084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6805,9 +6872,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1964224223}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: SendToMixingMojito
+      - m_Target: {fileID: 1142809810}
+        m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
+        m_MethodName: GoToMixingMojito
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6888,3 +6955,4 @@ SceneRoots:
   - {fileID: 900094119}
   - {fileID: 819543927}
   - {fileID: 1474930945}
+  - {fileID: 4681368119827878039}
