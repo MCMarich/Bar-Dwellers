@@ -30,13 +30,20 @@ public class LovelandFrog : NPC
     }
     protected override void Update() 
     {
-        Debug.Log("delay timer: " + _delaytimer);
-        _delaytimer -= Time.deltaTime;
-        if (_delaytimer <= 0.0f)
+        base.Update();
+        if (_scene == "Speak1")
         {
-            _player._currentMission = Mission.Two;
+            Debug.Log("delay timer: " + _delaytimer);
+            _delaytimer -= Time.deltaTime;
+            if (_delaytimer <= 0.0f)
+            {
+                _player._currentMission = Mission.Two;
+                base.Start();
+            }
+        }
+        else
+        {
             base.Start();
         }
-        base.Update();
     }
 }

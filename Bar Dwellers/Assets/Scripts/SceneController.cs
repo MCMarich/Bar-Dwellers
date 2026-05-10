@@ -5,6 +5,18 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public UnityEngine.SceneManagement.Scene scene;
+    [SerializeField] private Player _player;
+    private string _mission;
+    
+    private void Start()
+    {
+        _player = Player.Instance;
+    }
+    private void Update()
+    {
+        _mission = _player._currentMission.ToString();
+    }
+
     public void SendToStirring() // chagnes to stirringscene
     {
         SceneManager.LoadScene("StirringScene");
@@ -22,7 +34,7 @@ public class SceneController : MonoBehaviour
 
     public void SendToMixingMojito()
     {
-        SceneManager.LoadScene("MixingMoscow");
+        SceneManager.LoadScene("MixingMojito");
     }
 
     public void SendToMixingScarlet()
@@ -32,15 +44,22 @@ public class SceneController : MonoBehaviour
 
     public void SendToSpeak() // changes to speakingscene
     {
-        SceneManager.LoadScene(scene.name);
+        if (_mission == "One")
+        {
+            SceneManager.LoadScene("Speak1");
+        }
+        else if (_mission == "Two")
+        {
+            SceneManager.LoadScene("Speak2");
+        }
+        else if (_mission == "Three")
+        {
+            SceneManager.LoadScene("Speak3");
+        }
     }
 
     public void SendToYouDied()
     {
         SceneManager.LoadScene("YouDied");
-    }
-    void Awake()
-    {
-        Debug.Log("Saved Scene Name: " + scene.name);
     }
 }
