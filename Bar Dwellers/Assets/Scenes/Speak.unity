@@ -881,7 +881,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 825435720}
         m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
         m_MethodName: GoToMainMenu
         m_Mode: 1
@@ -4926,7 +4926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
-  currentSpeakScene: 
+  _player: {fileID: 0}
 --- !u!114 &1964224224
 MonoBehaviour:
   m_ObjectHideFlags: 0

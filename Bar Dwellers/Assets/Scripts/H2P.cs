@@ -5,6 +5,6 @@ public class H2P : MonoBehaviour
 {
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 }

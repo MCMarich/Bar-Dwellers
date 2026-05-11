@@ -1351,7 +1351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  scene: {}
   _player: {fileID: 0}
 --- !u!1 &884206884
 GameObject:
@@ -1599,7 +1598,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 55387075}
         m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
         m_MethodName: GoToMainMenu
         m_Mode: 1
@@ -3338,5 +3337,4 @@ SceneRoots:
   - {fileID: 762064962}
   - {fileID: 1328087806}
   - {fileID: 2004006960}
-  - {fileID: 1066417863}
   - {fileID: 55387074}
