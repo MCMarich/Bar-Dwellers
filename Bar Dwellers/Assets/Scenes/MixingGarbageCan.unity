@@ -1696,7 +1696,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 801645011}
         m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
-        m_MethodName: BackToSpeak
+        m_MethodName: GoToSpeak
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2023,7 +2023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  currentSpeakScene: 
+  _player: {fileID: 0}
 --- !u!114 &801645011 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8890813626295508919, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}

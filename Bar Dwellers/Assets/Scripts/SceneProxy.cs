@@ -16,13 +16,15 @@ public class SceneProxy : MonoBehaviour
 
     public void GoToMainMenu() => SceneController.Instance.SendToMainMenu();
 
-    public void MarkAndReturn() 
-    {
-        SceneController.Instance.MarkCurrentSpeak();
-    }
+    public void GoToSpeak() => SceneController.Instance.SendToSpeak();
 
-    public void BackToSpeak()
-    {
-        SceneController.Instance.ReturnSpeak();
-    }
+//    public void MarkAndReturn() 
+//    {
+//        SceneController.Instance.MarkCurrentSpeak();
+//    }
+
+//    public void BackToSpeak()
+//    {
+//        SceneController.Instance.ReturnSpeak();
+//    }
 }

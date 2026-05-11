@@ -505,9 +505,9 @@ PlayableDirector:
   - key: {fileID: -3365274515614763836, guid: 7e498230a698849fbba1b826a80c11b0, type: 2}
     value: {fileID: 738011362}
   - key: {fileID: -6414156510119779940, guid: 7e498230a698849fbba1b826a80c11b0, type: 2}
-    value: {fileID: 956981233}
+    value: {fileID: 0}
   - key: {fileID: 1169995974184068299, guid: 7e498230a698849fbba1b826a80c11b0, type: 2}
-    value: {fileID: 956981234}
+    value: {fileID: 0}
   - key: {fileID: 474367728524857447, guid: 7e498230a698849fbba1b826a80c11b0, type: 2}
     value: {fileID: 1668817633}
   m_ExposedReferences:
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c41b51ff3b8b2f54a8070093d58c8730, type: 2}
-  m_sharedMaterial: {fileID: 2481858249369065205, guid: 9299775bda1a4784786cad5e1d9acd49, type: 2}
+  m_sharedMaterial: {fileID: 6399925966335638743, guid: c41b51ff3b8b2f54a8070093d58c8730, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142809810}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
         m_MethodName: GoToMainMenu
         m_Mode: 1
@@ -1622,6 +1622,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &825435719
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314687612282217756, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342313694633887438, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+      propertyPath: m_Name
+      value: SceneProxy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+--- !u!114 &825435720 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8890813626295508919, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
+  m_PrefabInstance: {fileID: 825435719}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a5b78dbdcd57c43b2756d7abaa8795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &829745483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +2010,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142809810}
+      - m_Target: {fileID: 825435720}
         m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
         m_MethodName: GoToMixingScarlet
         m_Mode: 1
@@ -1954,17 +2022,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1142809810 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5698033903936601921, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-  m_PrefabInstance: {fileID: 4681368119827878039}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85a5b78dbdcd57c43b2756d7abaa8795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &1155150528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,9 +3369,9 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -8386297859574462630, guid: d7b1513c633a4453085f34e292c49fbc, type: 2}
-    value: {fileID: 927421353}
+    value: {fileID: 0}
   - key: {fileID: 7929892268990320279, guid: d7b1513c633a4453085f34e292c49fbc, type: 2}
-    value: {fileID: 927421354}
+    value: {fileID: 0}
   - key: {fileID: 837224468558972596, guid: d7b1513c633a4453085f34e292c49fbc, type: 2}
     value: {fileID: 271626782}
   - key: {fileID: 3703778521427545958, guid: d7b1513c633a4453085f34e292c49fbc, type: 2}
@@ -3543,7 +3600,7 @@ MonoBehaviour:
   m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c41b51ff3b8b2f54a8070093d58c8730, type: 2}
-  m_sharedMaterial: {fileID: 2481858249369065205, guid: 9299775bda1a4784786cad5e1d9acd49, type: 2}
+  m_sharedMaterial: {fileID: 6399925966335638743, guid: c41b51ff3b8b2f54a8070093d58c8730, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4157,7 +4214,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142809810}
+      - m_Target: {fileID: 825435720}
         m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
         m_MethodName: GoToMixingMoscow
         m_Mode: 1
@@ -4869,8 +4926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
-  scene: {}
-  _player: {fileID: 1249751362}
+  currentSpeakScene: 
 --- !u!114 &1964224224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5171,7 +5227,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142809810}
+      - m_Target: {fileID: 825435720}
         m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
         m_MethodName: GoToMixingEl
         m_Mode: 1
@@ -5508,6 +5564,10 @@ PrefabInstance:
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: c41b51ff3b8b2f54a8070093d58c8730, type: 2}
+    - target: {fileID: 2318858471192462046, guid: c50463d05be3c84409d5b9521274c730, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6399925966335638743, guid: c41b51ff3b8b2f54a8070093d58c8730, type: 2}
     - target: {fileID: 2318858471192462046, guid: c50463d05be3c84409d5b9521274c730, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -6262,63 +6322,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129011920363226382}
   m_CullTransparentMesh: 1
---- !u!1001 &4681368119827878039
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5712380199488728680, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_Name
-      value: SceneProxySpeak
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 480
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6410661828178080790, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fff61fb3edb57c9459cfd6ff296be668, type: 3}
 --- !u!114 &4806118808922069084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7270,7 +7273,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142809810}
+      - m_Target: {fileID: 825435720}
         m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
         m_MethodName: GoToMixingMojito
         m_Mode: 1
@@ -7352,6 +7355,7 @@ SceneRoots:
   - {fileID: 900094119}
   - {fileID: 819543927}
   - {fileID: 1474930945}
-  - {fileID: 4681368119827878039}
+  - {fileID: 825435719}
   - {fileID: 1616807627}
   - {fileID: 524579057}
+  - {fileID: 738011361}

@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public UnityEngine.SceneManagement.Scene scene;
+    
     [SerializeField] private Player _player;
     private string _mission;
+    private string _savedScene;
+    public static SceneController Instance;
     
     private void Start()
     {
+        Instance = this;
         _player = Player.Instance;
     }
     private void Update()
@@ -42,8 +45,20 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("MixingScarlet");
     }
+    public void SendToMixingGarbage()
+    {
+        SceneManager.LoadScene("MixingGarbageCan");
+    }
+    public void SendToMixingVodka()
+    {
+        SceneManager.LoadScene("MixingVodka");
+    }
 
     public void SendToYouDied()
+    {
+        SceneManager.LoadScene("YouDied");
+    }
+    public void SendToSpeak()
     {
         if (_mission == "One")
         {
@@ -61,7 +76,12 @@ public class SceneController : MonoBehaviour
 
     public void SendToMainMenu()
     {
-        savedScene = SceneManager.GetActiveScene().name;
+        _savedScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void SendToSavedscene()
+    {
+        SceneManager.LoadScene(_savedScene);
     }
 }

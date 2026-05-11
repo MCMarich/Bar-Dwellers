@@ -30,7 +30,7 @@ MonoBehaviour:
     m_path: Assets/Scenes/MixingMoscow.unity
     m_guid: b980af502a57595428ee27ded37eef93
   - m_enabled: 1
-    m_path: Assets/Scenes/MixingScarlet.unity
+    m_path: Assets/Scenes/MIxingScarlet.unity
     m_guid: 2424352bb7ab5b74480acb09d7e65990
   - m_enabled: 1
     m_path: Assets/Scenes/StirringScene.unity
@@ -50,6 +50,9 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/YouDied.unity
     m_guid: aec61240f5ca88a4d8f6d77be260be33
+  - m_enabled: 1
+    m_path: Assets/Scenes/MainMenu.unity
+    m_guid: 9023f6c526ef9f9419c613db9445560e
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
