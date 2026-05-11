@@ -1,10 +1,14 @@
+using System;
+using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class RestartButton : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-    public void Reset()
+    public void NewGame()
     {
         GameObject[] ddolObjects = GetDontDestroyOnLoadObjects();
+
         if (ddolObjects.Length > 0)
         {
             foreach (GameObject obj in ddolObjects)
@@ -12,10 +16,19 @@ public class RestartButton : MonoBehaviour
                 Destroy(obj);
             }
         }
-        SceneManager.LoadScene("MainMenu");
-        
+        SceneManager.LoadScene("Speak");
     }
-    private GameObject[] GetDontDestroyOnLoadObjects()
+
+    public void How2Play()
+    {
+        SceneManager.LoadScene("How2Play");
+    }
+
+    public void Continue()
+    {
+        SceneController.Instance.SendToSavedscene();
+    }
+        private GameObject[] GetDontDestroyOnLoadObjects()
     {
         GameObject temp = new GameObject();
         DontDestroyOnLoad(temp);

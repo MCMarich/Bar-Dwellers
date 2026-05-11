@@ -1,3 +1,4 @@
+using System;
 using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -42,7 +43,7 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("MixingScarlet");
     }
 
-    public void SendToSpeak() // changes to speakingscene
+    public void SendToYouDied()
     {
         if (_mission == "One")
         {
@@ -58,8 +59,9 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    public void SendToYouDied()
+    public void SendToMainMenu()
     {
-        SceneManager.LoadScene("YouDied");
+        savedScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("MainMenu");
     }
 }

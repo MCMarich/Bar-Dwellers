@@ -30,7 +30,7 @@ MonoBehaviour:
     m_path: Assets/Scenes/MixingMoscow.unity
     m_guid: b980af502a57595428ee27ded37eef93
   - m_enabled: 1
-    m_path: Assets/Scenes/MIxingScarlet.unity
+    m_path: Assets/Scenes/MixingScarlet.unity
     m_guid: 2424352bb7ab5b74480acb09d7e65990
   - m_enabled: 1
     m_path: Assets/Scenes/StirringScene.unity
