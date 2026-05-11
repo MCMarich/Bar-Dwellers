@@ -21,6 +21,9 @@ MonoBehaviour:
   m_OverrideGlobalSceneList: 1
   m_Scenes:
   - m_enabled: 1
+    m_path: Assets/Scenes/MainMenu.unity
+    m_guid: 9023f6c526ef9f9419c613db9445560e
+  - m_enabled: 1
     m_path: Assets/Scenes/MixingElDiablo.unity
     m_guid: 0c0d80872588ef14c96156900f415464
   - m_enabled: 1
@@ -50,6 +53,15 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/YouDied.unity
     m_guid: aec61240f5ca88a4d8f6d77be260be33
+  - m_enabled: 1
+    m_path: Assets/Scenes/How2Play.unity
+    m_guid: c4237c7ac64134f4f9c2dda1d0a8409a
+  - m_enabled: 1
+    m_path: Assets/Scenes/MixingVodka.unity
+    m_guid: bcb7a9221fa0ab340a20d4eca2d13004
+  - m_enabled: 1
+    m_path: Assets/Scenes/MixingGarbageCan.unity
+    m_guid: be9c01eebf8b2df49aee39b5ada30198
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
