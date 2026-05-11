@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Squimp
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Ah c'mon you can't be leaving that fast!!
+  - C'mon, I could make it worth your time!
+  - Ugh, women...
+  - Hey, you!
+  - What are you standing around for?
+  _playerReplyOptions:
+  - Who gave you the right to talk like that!?
+  - I'm gonna have to ask you to leave...
+  - Wow, you're short.
+  _npcReplies:
+  - {fileID: 11400000, guid: ff4677fef9db6034b9363965173aad44, type: 2}
+  - {fileID: 11400000, guid: ea49b137ca8a3b74e93d21054a6731b2, type: 2}
+  - {fileID: 11400000, guid: 0ffa3524f3097b94f96e32cde37dc673, type: 2}

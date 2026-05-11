@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Gratification.
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Alty
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Thanks, hon.
+  - But I don't need sympathies.
+  - Even if you COULD get others to believe in us.
+  - What then?
+  - Much of us would likely hunted.
+  - Or used as a tool for some government.
+  - Indeed, our life is better in hiding.
+  - Where we can be free.
+  - Don;t worry about it though.
+  - You're a bartender, yes?
+  - How about you get me something with some class to it.
+  - In light of the old times.
+  _playerReplyOptions: []
+  _npcReplies: []

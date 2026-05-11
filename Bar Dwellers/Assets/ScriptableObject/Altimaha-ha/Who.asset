@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Who
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Alty
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Oh, where are my manners?
+  - I suppose many of you have forgotten now...
+  - I am Altimaha-ha.
+  - Like the others, I have been here for a very long time.
+  - Much longer than yourself.
+  - It's always been quite the sight to see what humans can create.
+  - Well, for better or for worse...
+  _playerReplyOptions:
+  - What do you mean?
+  - Tell me more about "the others"
+  - Time tends to change...
+  _npcReplies:
+  - {fileID: 11400000, guid: 13f6062ec0345214cb311184c6a7b478, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 169bfa32205d5f54286575be26b0c092, type: 2}

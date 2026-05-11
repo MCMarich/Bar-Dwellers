@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Jersey
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Alty
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Did he sppok ya, hon?
+  - He certainly doesn't mean any of it.
+  - I mean if you only knew half of what he'd been through...
+  - Truly a terrible thing, to live without a mother's love.
+  _playerReplyOptions:
+  - Have you both known each other long?
+  - I wouldn't say he SCARED me...
+  - Know anyone else from around here?
+  _npcReplies:
+  - {fileID: 11400000, guid: 7be9dafb684fb4c4a9b7455d371a1f1a, type: 2}
+  - {fileID: 11400000, guid: a8b5e90e045d6094d991e36f94959e1e, type: 2}
+  - {fileID: 11400000, guid: 50c46e634368a384f95ebbbad471e03c, type: 2}

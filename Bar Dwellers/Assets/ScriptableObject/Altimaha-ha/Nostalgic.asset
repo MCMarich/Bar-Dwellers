@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Nostalgic
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Alty
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Sometimes I think I've moved on...
+  - Then I'll fall right back into place.
+  - I suppose the years may be getting to me.
+  - It takes a lot out of someone to break out of old habits.
+  - But I wanna say I've done good...
+  - I've shown kindness...
+  - I've shown care...
+  - And if the time come...
+  - If I were to face being forgotten...
+  - I wanna say that I gave all I had.
+  _playerReplyOptions:
+  - How noble...
+  - You've certainly been very kind to me.
+  _npcReplies:
+  - {fileID: 11400000, guid: 53906edd5bbacfa4395b86f0268e7ea0, type: 2}
+  - {fileID: 11400000, guid: 9bf4f6e5df4795948ad88c84b918f116, type: 2}

@@ -51,7 +51,7 @@ public class NPC : MonoBehaviour
             _dialogueController.AdvanceDialogue();
         }
         _scene= SceneManager.GetActiveScene().name;
-        if (_scene != "Speak" && _scene != "Speak1" && _scene != "Speak2" && _scene != "Speak3")
+        if (_scene != "Speak" && _scene != "Speak1" && _scene != "Speak2" && _scene != "Speak3" && _scene != "Speak4" && _scene != "Speak5")
         {
             gameObject.SetActive(false);
         }
