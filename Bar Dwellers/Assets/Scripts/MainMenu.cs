@@ -26,7 +26,16 @@ public class MainMenu : MonoBehaviour
 
     public void Continue()
     {
-        SceneController.Instance.SendToSavedscene();
+        try
+        {
+            SceneController.Instance.SendToSavedscene();
+        }
+        catch (System.Exception)
+        {
+            
+            Debug.Log("No Saved scene");
+        }
+        
     }
         private GameObject[] GetDontDestroyOnLoadObjects()
     {
