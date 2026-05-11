@@ -14,6 +14,8 @@ public class SceneProxy : MonoBehaviour
     
     public void GoToYouDied() => SceneController.Instance.SendToYouDied();
 
+    public void GoToMainMenu() => SceneController.Instance.SendToMainMenu();
+
     public void MarkAndReturn() 
     {
         SceneController.Instance.MarkCurrentSpeak();

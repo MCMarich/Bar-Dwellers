@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
 
     public void Continue()
     {
-        throw new NotImplementedException("Continue Button has not been implemented");
+        SceneController.Instance.SendToSavedscene();
     }
         private GameObject[] GetDontDestroyOnLoadObjects()
     {

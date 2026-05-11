@@ -7,7 +7,9 @@ public class SceneController : MonoBehaviour
 {
     public static SceneController Instance;
     
-    private string currentSpeakScene;
+    public string currentSpeakScene;
+
+    private string savedScene;
 
     private void Awake() {
         if (Instance == null)
@@ -66,5 +68,15 @@ public class SceneController : MonoBehaviour
     public void SendToYouDied()
     {
         SceneManager.LoadScene("YouDied");
+    }
+
+    public void SendToMainMenu()
+    {
+        savedScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void SendToSavedscene()
+    {
+        SceneManager.LoadScene(savedScene);
     }
 }

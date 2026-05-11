@@ -4,9 +4,24 @@ public class RestartButton : MonoBehaviour
 {
     public void Reset()
     {
-        Player.Instance._inventoryString.Clear();
-        Player.Instance._rating = 0f;
-        SceneManager.LoadScene("Speak");
+        GameObject[] ddolObjects = GetDontDestroyOnLoadObjects();
+        if (ddolObjects.Length > 0)
+        {
+            foreach (GameObject obj in ddolObjects)
+            {
+                Destroy(obj);
+            }
+        }
+        SceneManager.LoadScene("MainMenu");
         
+    }
+    private GameObject[] GetDontDestroyOnLoadObjects()
+    {
+        GameObject temp = new GameObject();
+        DontDestroyOnLoad(temp);
+        Scene ddolScene = temp.scene;
+        Destroy(temp);
+        
+        return ddolScene.GetRootGameObjects();
     }
 }
