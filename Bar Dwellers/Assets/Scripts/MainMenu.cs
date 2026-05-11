@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
     public void How2Play()
     {
-        throw new NotImplementedException("How to play is not developed yet");
+        SceneManager.LoadScene("How2Play");
     }
 
     public void Continue()
