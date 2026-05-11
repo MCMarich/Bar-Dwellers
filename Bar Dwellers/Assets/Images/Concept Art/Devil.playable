@@ -1254,11 +1254,11 @@ MonoBehaviour:
   - {fileID: -4797525857673097825}
   - {fileID: 2060563946019721035}
   - {fileID: 478678718003439275}
-  m_FixedDuration: 0
+  m_FixedDuration: 15.416666666666666
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1
-  m_DurationMode: 0
+  m_DurationMode: 1
   m_MarkerTrack: {fileID: -7480535344123445993}
 --- !u!74 &287815098878110177
 AnimationClip:

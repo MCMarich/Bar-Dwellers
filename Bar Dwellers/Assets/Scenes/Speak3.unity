@@ -1461,9 +1461,10 @@ GameObject:
   - component: {fileID: 927421356}
   - component: {fileID: 927421355}
   - component: {fileID: 927421354}
+  - component: {fileID: 927421357}
   m_Layer: 0
   m_Name: Devil
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1564,6 +1565,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &927421357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927421353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2bbd23ed13b62542857884cb3e2dbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JerseyDevil
+  _npcReaction: 0
+  _player: {fileID: 0}
+  _sceneController: {fileID: 1964224223}
+  _cutscene: {fileID: 0}
+  _reset: {fileID: 1666121426}
+  _dialogueController: {fileID: 1964224224}
+  _appear: 0
+  _name: JerseyDevil
+  _dialoguebox: {fileID: 179812866}
+  _dialogueStartingNodes:
+  - {fileID: 11400000, guid: a42a9b442903f5741a4bcdb6806f6872, type: 2}
+  - {fileID: 11400000, guid: bd305572b658e0f42b8e92ed10fed971, type: 2}
+  - {fileID: 11400000, guid: c6ba3a56dcc1e7948857403907b28ae4, type: 2}
 --- !u!114 &968375493
 MonoBehaviour:
   m_ObjectHideFlags: 0

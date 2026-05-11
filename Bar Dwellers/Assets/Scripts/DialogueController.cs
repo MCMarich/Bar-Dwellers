@@ -9,7 +9,7 @@ using UnityEngine.Timeline;
 public class DialogueController : MonoBehaviour
 {
     [SerializeField] private UIController _dialogue;
-    [SerializeField] private NPC _currentNPC;
+    [SerializeField] public NPC _currentNPC;
     private DialogueNode _dialogueStartNode;
     public DialogueNode _currentNode;
     private int _currentLine = 0;
