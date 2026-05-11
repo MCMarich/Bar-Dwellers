@@ -5,41 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public static SceneController Instance;
+    public UnityEngine.SceneManagement.Scene scene;
+    [SerializeField] private Player _player;
+    private string _mission;
     
-    public string currentSpeakScene;
-
-    private string savedScene;
-
-    private void Awake() {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    public void MarkCurrentSpeak()
+    private void Start()
     {
-        currentSpeakScene = SceneManager.GetActiveScene().name;
-        Debug.Log("Marked " + currentSpeakScene + " as the current speak scene");
+        _player = Player.Instance;
+    }
+    private void Update()
+    {
+        _mission = _player._currentMission.ToString();
     }
 
-    public void ReturnSpeak()
-    {
-        if (!string.IsNullOrEmpty(currentSpeakScene))
-        {
-            SceneManager.LoadScene(currentSpeakScene);
-        }
-        else
-        {
-            Debug.LogError("No return scene saved!");
-        }
-    }
     public void SendToStirring() // chagnes to stirringscene
     {
         SceneManager.LoadScene("StirringScene");
@@ -57,7 +35,7 @@ public class SceneController : MonoBehaviour
 
     public void SendToMixingMojito()
     {
-        SceneManager.LoadScene("MixingMoscow");
+        SceneManager.LoadScene("MixingMojito");
     }
 
     public void SendToMixingScarlet()
@@ -67,16 +45,23 @@ public class SceneController : MonoBehaviour
 
     public void SendToYouDied()
     {
-        SceneManager.LoadScene("YouDied");
+        if (_mission == "One")
+        {
+            SceneManager.LoadScene("Speak1");
+        }
+        else if (_mission == "Two")
+        {
+            SceneManager.LoadScene("Speak2");
+        }
+        else if (_mission == "Three")
+        {
+            SceneManager.LoadScene("Speak3");
+        }
     }
 
     public void SendToMainMenu()
     {
         savedScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("MainMenu");
-    }
-    public void SendToSavedscene()
-    {
-        SceneManager.LoadScene(savedScene);
     }
 }

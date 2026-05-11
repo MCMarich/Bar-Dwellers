@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public float _rating = 3.0f;
     public static Player Instance { get; private set; }
     public Player _player { get; private set; }
+    private string _scene;
 
     private void Awake()
     {
@@ -41,7 +42,8 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Speak")
+        _scene = SceneManager.GetActiveScene().name;
+        if (_scene == "Speak" || _scene == "Speak1" || _scene == "Speak2" || _scene == "Speak3")
         {
             if(_ratingText == null)
             {
@@ -52,5 +54,5 @@ public class Player : MonoBehaviour
                 _ratingText.text = "Rating: " + _rating.ToString() + "/5";
             }
         }
-}
+    }
 }

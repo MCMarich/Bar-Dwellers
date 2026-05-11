@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         _scene = SceneManager.GetActiveScene().name;
-        if (_player._currentMission == Mission.Two && _npc.activeSelf != true && _scene == "Speak")
+        if (_player._currentMission == Mission.Two && _npc.activeSelf != true && _scene == "Speak2")
         {
             _npc.SetActive(true);
         }

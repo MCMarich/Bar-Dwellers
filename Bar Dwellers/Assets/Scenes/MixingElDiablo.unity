@@ -1273,9 +1273,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 801645011}
-        m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
-        m_MethodName: BackToSpeak
+      - m_Target: {fileID: 689153141}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: SendToSpeak
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1407,7 +1407,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &762064961
+--- !u!1 &689153140
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1415,8 +1415,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 762064962}
-  - component: {fileID: 762064963}
+  - component: {fileID: 689153142}
+  - component: {fileID: 689153141}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1424,13 +1424,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &762064962
+--- !u!114 &689153141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689153140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  scene: {}
+  _player: {fileID: 0}
+--- !u!4 &689153142
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762064961}
+  m_GameObject: {fileID: 689153140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.02893, y: 1.14674, z: 0}
@@ -1439,30 +1453,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &762064963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762064961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4d704d82b590084a877b35be2665d8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  currentSpeakScene: 
---- !u!114 &801645011 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8890813626295508919, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
-  m_PrefabInstance: {fileID: 4843545934628252557}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85a5b78dbdcd57c43b2756d7abaa8795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &884206884
 GameObject:
   m_ObjectHideFlags: 0
@@ -3508,8 +3498,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 762064962}
+  - {fileID: 1066417863}
   - {fileID: 1328087806}
   - {fileID: 2004006960}
-  - {fileID: 1066417863}
-  - {fileID: 4843545934628252557}
+  - {fileID: 689153142}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Drink
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: JerseyDevil
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Don't be so rash.
+  - I'm a seasoned patron.
+  - Is it not your job to quench my thirst?
+  _playerReplyOptions:
+  - I suppose...
+  - You haven't ordered a drink, though.
+  - Would you even be able to pay?
+  _npcReplies:
+  - {fileID: 11400000, guid: b0900b42eccb5964c948eb34347f8a1c, type: 2}
+  - {fileID: 11400000, guid: 51bfdd7748f978146a129c7ec16f5c5b, type: 2}
+  - {fileID: 11400000, guid: e186ecc0cf5447741ad362d6b64ebf78, type: 2}

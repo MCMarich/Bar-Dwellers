@@ -21,7 +21,7 @@ public class NPC : MonoBehaviour
     [SerializeField] protected TMP_Text _reset;
     [SerializeField] protected DialogueController _dialogueController;
     public bool _appear = false;
-    private string _scene;
+    protected string _scene;
 
     [SerializeField] public string _name;
     [SerializeField] public GameObject _dialoguebox;
@@ -51,7 +51,7 @@ public class NPC : MonoBehaviour
             _dialogueController.AdvanceDialogue();
         }
         _scene= SceneManager.GetActiveScene().name;
-        if (_scene != "Speak")
+        if (_scene != "Speak" && _scene != "Speak1" && _scene != "Speak2" && _scene != "Speak3")
         {
             gameObject.SetActive(false);
         }
