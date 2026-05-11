@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: FastTrack
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Alty
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - I understand.
+  - But it can be dificult.
+  - Seeing them all go their seperate ways now.
+  - I wonder where my place will be in their future.
+  _playerReplyOptions:
+  - You feel stuck...
+  - Seems like you already give so much...
+  _npcReplies:
+  - {fileID: 11400000, guid: 02b442e1ad93bab408576658c773af0b, type: 2}
+  - {fileID: 11400000, guid: 9bf4f6e5df4795948ad88c84b918f116, type: 2}

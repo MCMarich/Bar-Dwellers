@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Hon
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Alty
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Thanks, hon.
+  - You seem to have some kindness in your heart too.
+  - If there was anything you should take away from our talk...
+  - It should be to show others that kindness inside you.
+  - Let it inspire those around you.
+  - So that maybe you too can have an impact.
+  - And be remembered just as fondly.
+  - '*ahem*'
+  - Excuse me, I tend to get quite passionate at these times.
+  - Hon, if you may...
+  - Get me something with some class, okay?
+  _playerReplyOptions: []
+  _npcReplies: []

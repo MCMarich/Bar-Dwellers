@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Short
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Squimp
+  _npcRating: 0
+  _isFinalNode: 0
+  _lines:
+  - Hey, you shut the fuck up!
+  - 3'8 isn't even that bad!
+  - It's like...
+  - It's like average, you know!
+  _playerReplyOptions:
+  - In your dreams!
+  - Are you really so insecure?
+  _npcReplies:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: f2b00fa30902e82449d9fbb7c632b6e6, type: 2}

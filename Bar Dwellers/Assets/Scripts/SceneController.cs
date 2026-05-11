@@ -72,6 +72,14 @@ public class SceneController : MonoBehaviour
         {
             SceneManager.LoadScene("Speak3");
         }
+        else if (_mission == "Four")
+        {
+            SceneManager.LoadScene("Speak4");
+        }
+        else if (_mission == "Five")
+        {
+            SceneManager.LoadScene("Speak5");
+        }
     }
 
     public void SendToMainMenu()
