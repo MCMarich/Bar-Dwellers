@@ -92,4 +92,14 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(_savedScene);
     }
+    
+    public void SendToFired()
+    {
+        SceneManager.LoadScene("Fired");
+    }
+
+    public void SendToPromo()
+    {
+        SceneManager.LoadScene("Promotion");
+    }
 }
