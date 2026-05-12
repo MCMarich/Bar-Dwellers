@@ -37,7 +37,7 @@ public class Squimp : NPC
             _delaytimer -= Time.deltaTime;
             if (_delaytimer <= 0.0f)
             {
-                _player._currentMission = Mission.Four;
+                _player._currentMission = Mission.Five;
                 _dialogueController._currentNPC = this;
                 base.Start();
             }

@@ -37,7 +37,7 @@ public class Alty : NPC
             _delaytimer -= Time.deltaTime;
             if (_delaytimer <= 0.0f)
             {
-                _player._currentMission = Mission.Three;
+                _player._currentMission = Mission.Four;
                 _dialogueController._currentNPC = this;
                 base.Start();
             }

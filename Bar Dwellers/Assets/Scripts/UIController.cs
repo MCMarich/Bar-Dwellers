@@ -32,7 +32,7 @@ public class UIController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.I) && _boxActive == true)
         {
             _inventorybox.SetActive(false);
-            _notebooks[0].SetActive(false);
+            _notebooks[i].SetActive(false);
             _uparrow.SetActive(false);
             _downarrow.SetActive(false);
             _boxActive = false;
@@ -83,12 +83,19 @@ public class UIController : MonoBehaviour
     public void Up()
     {
         i += 1;
-        if (i > (_notebooks.Count - 1))
+        if (i == _notebooks.Count)
         {
+            _inventorybox.SetActive(false);
             i = 0;
+            _inventorybox = _notebooks[i];
+            _inventorybox.SetActive(true);
         }
-        _notebooks[i - 1].SetActive(false);
-        _notebooks[i].SetActive(true);
+        else
+        {
+            _inventorybox = _notebooks[i];
+            _notebooks[i - 1].SetActive(false);
+            _notebooks[i].SetActive(true);
+        }
     }
 
     public void Down()
@@ -96,10 +103,17 @@ public class UIController : MonoBehaviour
         i -= 1;
         if (i < 0)
         {
+            _inventorybox.SetActive(false);
             i = _notebooks.Count - 1;
+            _inventorybox = _notebooks[i];
+            _inventorybox.SetActive(true);
         }
-        _notebooks[i + 1].SetActive(false);
-        _notebooks[i].SetActive(true);
+        else
+        {
+            _inventorybox = _notebooks[i];
+            _notebooks[i + 1].SetActive(false);
+            _notebooks[i].SetActive(true);
+        }
     }
 
     public void HideDialogue()

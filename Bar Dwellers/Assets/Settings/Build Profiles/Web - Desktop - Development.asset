@@ -62,6 +62,12 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/MixingGarbageCan.unity
     m_guid: be9c01eebf8b2df49aee39b5ada30198
+  - m_enabled: 1
+    m_path: Assets/Scenes/Speak5.unity
+    m_guid: dea3524a39b47c747a77a17049fa4f7b
+  - m_enabled: 1
+    m_path: Assets/Scenes/Speak4.unity
+    m_guid: e8219f073eb289246b39c7f6e3772f65
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
