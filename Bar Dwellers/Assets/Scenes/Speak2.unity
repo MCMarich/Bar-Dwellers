@@ -4624,9 +4624,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
-        m_MethodName: GoToMixingMoscow
+      - m_Target: {fileID: 1964224223}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: SendToMixingGarbage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6805,7 +6805,7 @@ GameObject:
   - component: {fileID: 1635321166471707055}
   - component: {fileID: 260903995298310319}
   m_Layer: 5
-  m_Name: Vodka
+  m_Name: Garbage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7507,9 +7507,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneProxy, Assembly-CSharp
-        m_MethodName: GoToMixingMoscow
+      - m_Target: {fileID: 1964224223}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: SendToMixingVodka
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
