@@ -15,10 +15,12 @@ MonoBehaviour:
   npcName: Squimp
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
   _lines:
   - Alright! Alright!
-  - Jeez louise!
-  - Such a fucking woke snowflake...
-  - You guys are killing society.
+  - Get off my back.
+  - 'Just get me my drink... '
+  - And stop giving me that stupid glare!
   _playerReplyOptions: []
   _npcReplies: []

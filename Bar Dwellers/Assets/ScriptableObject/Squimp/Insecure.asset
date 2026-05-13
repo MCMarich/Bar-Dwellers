@@ -15,9 +15,12 @@ MonoBehaviour:
   npcName: Squimp
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 1
+  _win: 0
   _lines:
-  - No!
-  - I don't even care!
-  - Gotta watch my cortisol, you know.
+  - No, I am not!
+  - I don't even care.
+  - You're the one pestering me on this pointless topic.
+  - Ugh, I don't have time for this...
   _playerReplyOptions: []
   _npcReplies: []

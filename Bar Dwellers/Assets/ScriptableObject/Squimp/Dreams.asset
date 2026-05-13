@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
-  m_Name: Short
+  m_Name: Dreams
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   npcName: Squimp
   _npcRating: 0
@@ -18,14 +18,11 @@ MonoBehaviour:
   _isDead: 0
   _win: 0
   _lines:
-  - You absolute troglodyte...
-  - I'd assumed you'd be a little dim...
-  - But this is ridiculous.
-  - 3'8 isn't even that bad.
-  - It's like average, you know!
-  _playerReplyOptions:
-  - In your dreams!
-  - Are you really so insecure?
-  _npcReplies:
-  - {fileID: 11400000, guid: 1db6ccd1828e9c746809c19c3764213b, type: 2}
-  - {fileID: 11400000, guid: f2b00fa30902e82449d9fbb7c632b6e6, type: 2}
+  - I do not dream...
+  - I act.
+  - You should do the same instead wasting my time here.
+  - Every second longer here makes my IQ...
+  - MY REALLY HIGH IQ...
+  - Evaporate into the air.
+  _playerReplyOptions: []
+  _npcReplies: []

@@ -15,17 +15,19 @@ MonoBehaviour:
   npcName: Squimp
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
   _lines:
-  - Oh, did I strike a nerve, snowflake?
-  - Oh I bet you're totally triggered now.
-  - What are you gonna do, cancel me?
-  - I don't care bro.
-  - The woke left really can't take a joke anymore.
+  - Oh, did I strike a nerve?
+  - I'd expect as such.
+  - You kind really does have thin skin.
+  - That's why you're all so emotional.
+  - Unlike us...
+  - We work off pure logic.
+  - We're biological leaders.
   _playerReplyOptions:
   - Security!
-  - Can you even vote?
   - This cannot be real...
   _npcReplies:
   - {fileID: 11400000, guid: 5ab17aed606b4744fab362d20ea6c95b, type: 2}
-  - {fileID: 11400000, guid: 20e49ca0af7b6984cb1ac0d31ab05518, type: 2}
   - {fileID: 11400000, guid: 738af81ebbca9f24d8e191055bf1b79a, type: 2}

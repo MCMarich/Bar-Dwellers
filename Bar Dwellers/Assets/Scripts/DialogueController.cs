@@ -80,6 +80,10 @@ public class DialogueController : MonoBehaviour
         {
             SceneManager.LoadScene("YouDied");
         }
+        else if (_currentNode._win == true)
+        {
+            SceneManager.LoadScene("Promotion");
+        }
             Debug.Log("ended dialogue");
         _currentNPC._npcReaction = NPCSpeech.Idle;
         _currentNPC._dialoguebox.SetActive(false);
