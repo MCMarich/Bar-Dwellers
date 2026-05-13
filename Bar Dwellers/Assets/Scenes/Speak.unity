@@ -3686,7 +3686,6 @@ GameObject:
   - component: {fileID: 1878209042}
   - component: {fileID: 1878209045}
   - component: {fileID: 1878209046}
-  - component: {fileID: 1878209047}
   - component: {fileID: 1878209048}
   m_Layer: 0
   m_Name: Loveland Frog
@@ -3840,29 +3839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee246e70dfcaab42bec1cb275068a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LovelandFrog
-  _npcReaction: 0
-  _player: {fileID: 1249751362}
-  _sceneController: {fileID: 0}
-  _cutscene: {fileID: 819543926}
-  _reset: {fileID: 1666121426}
-  _dialogueController: {fileID: 1964224224}
-  _appear: 0
-  _name: Loveland Frog
-  _dialoguebox: {fileID: 179812866}
-  _dialogueStartingNodes:
-  - {fileID: 11400000, guid: fb75ac5cf37a7514eb8fb533d0e753c2, type: 2}
---- !u!114 &1878209047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878209041}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc818da1d50cdf64fb8e0edd2897e0af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC
   _npcReaction: 0
   _player: {fileID: 1249751362}
   _sceneController: {fileID: 0}

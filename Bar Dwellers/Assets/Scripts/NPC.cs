@@ -27,10 +27,13 @@ public class NPC : MonoBehaviour
     [SerializeField] public GameObject _dialoguebox;
         // all the areas the convo can start in 
     public DialogueNode[] _dialogueStartingNodes; 
+    protected bool _timerGoing = false;
 
     protected virtual void Awake()
     {
         //DontDestroyOnLoad(gameObject);
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        _player = playerObject.GetComponent<Player>();
         _dialogueController._currentNode = _dialogueStartingNodes[0];
     }
 

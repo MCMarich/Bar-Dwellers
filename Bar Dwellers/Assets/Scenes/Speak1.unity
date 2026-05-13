@@ -3877,7 +3877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LovelandFrog
   _npcReaction: 0
   _player: {fileID: 0}
-  _sceneController: {fileID: 0}
+  _sceneController: {fileID: 1964224223}
   _cutscene: {fileID: 819543926}
   _reset: {fileID: 1666121426}
   _dialogueController: {fileID: 1964224224}
