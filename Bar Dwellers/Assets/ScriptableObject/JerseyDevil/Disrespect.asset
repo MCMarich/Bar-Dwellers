@@ -15,6 +15,7 @@ MonoBehaviour:
   npcName: JerseyDevil
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 1
   _lines:
   - ...
   - It seems you aren't exactly aware of the stakes here...

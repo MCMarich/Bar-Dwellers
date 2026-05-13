@@ -1,6 +1,8 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.SceneManagement;
+
 
 //using static UnityEditor.Progress;
 using UnityEngine.Timeline;
@@ -73,7 +75,11 @@ public class DialogueController : MonoBehaviour
         {
             _currentNPC._cutscene.Play();
         }
-        Debug.Log("ended dialogue");
+        else if (_currentNode._isDead == true) 
+        {
+            SceneManager.LoadScene("YouDied");
+        }
+            Debug.Log("ended dialogue");
         _currentNPC._npcReaction = NPCSpeech.Idle;
         _currentNPC._dialoguebox.SetActive(false);
         _waitingForPlayerResponse = false;
