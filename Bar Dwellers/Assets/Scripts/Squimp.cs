@@ -49,7 +49,7 @@ public class Squimp : NPC
             if (_delaytimer <= 0.0f && _timerGoing == true)
             {
                 base.Awake();
-                _player._currentMission = Mission.Four;
+                _player._currentMission = Mission.Five;
                 _dialogueController._currentNPC = this;
                 base.Start();
                 _timerGoing = false;
