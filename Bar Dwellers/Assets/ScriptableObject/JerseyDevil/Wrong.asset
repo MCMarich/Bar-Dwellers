@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
   npcName: JerseyDevil
   _npcRating: 0.5
-  _isFinalNode: 1
+  _isFinalNode: 0
+  _isDead: 1
   _lines:
   - Pitiful...
   _playerReplyOptions: []
