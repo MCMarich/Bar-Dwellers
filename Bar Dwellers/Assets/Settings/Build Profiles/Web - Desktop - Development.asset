@@ -68,6 +68,9 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/Speak4.unity
     m_guid: e8219f073eb289246b39c7f6e3772f65
+  - m_enabled: 1
+    m_path: Assets/Scenes/Promotion.unity
+    m_guid: 0cd20e7e2bf135a49897d556468b302b
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
