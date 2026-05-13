@@ -67,6 +67,7 @@ public class DialogueController : MonoBehaviour
             else if (Player.Instance._rating < 0.0f)
             {
                 Player.Instance._rating = 0.0f;
+                SceneManager.LoadScene("Fired");
             }
 
             Player.Instance._ratingText.text = "Rating: " + Player.Instance._rating.ToString() + "/5";
