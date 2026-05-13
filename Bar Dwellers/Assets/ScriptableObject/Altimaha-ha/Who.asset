@@ -15,6 +15,7 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
   _lines:
   - Oh, where are my manners?
   - I suppose many of you have forgotten now...
@@ -29,5 +30,5 @@ MonoBehaviour:
   - Time tends to change...
   _npcReplies:
   - {fileID: 11400000, guid: 13f6062ec0345214cb311184c6a7b478, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 905ec81b57c169d46827a2c8c54f2aeb, type: 2}
   - {fileID: 11400000, guid: 169bfa32205d5f54286575be26b0c092, type: 2}
