@@ -15,6 +15,7 @@ MonoBehaviour:
   npcName: Squimp
   _npcRating: 0.5
   _isFinalNode: 0
+  _isDead: 1
   _lines:
   - Tch
   - Cease.
