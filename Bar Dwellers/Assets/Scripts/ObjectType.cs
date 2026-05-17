@@ -16,5 +16,6 @@ public enum DrinkType
     Blueberry,
     Rum,
     Vodka,
+    Ice
 
 }
