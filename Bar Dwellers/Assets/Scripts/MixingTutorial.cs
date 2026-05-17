@@ -8,7 +8,9 @@ public class MixingTutorial : MonoBehaviour
     public Mixer mixer;
     public EmptyGlass glass;
     public TextMeshProUGUI instructionText;
-    public GameObject highlightArrow; // Optional: An arrow pointing at things
+    public GameObject highlightArrow1;
+    public GameObject highlightArrow2;
+    public GameObject highlightArrow3;
 
     private int currentStep = 0;
 
@@ -31,7 +33,7 @@ public class MixingTutorial : MonoBehaviour
 
             case 2: // Step 3: Pour into glass
                 // We check if the glass is no longer empty
-                if (glass.liquidImage.gameObject.activeSelf) AdvanceStep();
+                if (mixer.contents.Count == 0) AdvanceStep();
                 break;
         }
     }
@@ -47,14 +49,17 @@ public class MixingTutorial : MonoBehaviour
         switch (currentStep)
         {
             case 0:
-                instructionText.text = "Drag the Alcohol bottle into the Shaker.";
+                instructionText.text = "Drag the ingredients into the Shaker.";
                 // Point arrow at the bottle
                 break;
             case 1:
                 instructionText.text = "Now CLICK and SHAKE the mixer until the bar is full!";
+                highlightArrow1.SetActive(false);
                 break;
             case 2:
                 instructionText.text = "It's ready! Drag the Shaker onto the Glass to pour.";
+                highlightArrow2.SetActive(false);
+                highlightArrow3.SetActive(true);
                 break;
             case 3:
                 instructionText.text = "Perfect! You've made your first drink.";
