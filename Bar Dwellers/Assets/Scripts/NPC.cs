@@ -20,6 +20,7 @@ public class NPC : MonoBehaviour
     [SerializeField] public PlayableDirector _cutscene;
     [SerializeField] protected TMP_Text _reset;
     [SerializeField] protected DialogueController _dialogueController;
+    [SerializeField] protected TMP_Text _nametag;
     public bool _appear = false;
     protected string _scene;
 

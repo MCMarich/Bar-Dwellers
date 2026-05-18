@@ -31,6 +31,7 @@ public class JerseyDevil : NPC
     protected override void Start()
     {
         _reset.text = "...";
+        _nametag.text = _name;
         if (_scene == "Speak3")
         {
             base.Start();

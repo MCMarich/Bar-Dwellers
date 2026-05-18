@@ -31,6 +31,7 @@ public class LovelandFrog : NPC
     protected override void Start()
     {
         _reset.text = "...";
+        _nametag.text = _name;
         _scene = SceneManager.GetActiveScene().name;
         if (_scene == "Speak2")
         {

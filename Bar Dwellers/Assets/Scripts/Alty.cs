@@ -31,6 +31,7 @@ public class Alty : NPC
     protected override void Start()
     {
         _reset.text = "...";
+        _nametag.text = _name;
         if (_scene == "Speak4")
         {
             base.Start();
