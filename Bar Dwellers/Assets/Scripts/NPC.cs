@@ -42,6 +42,7 @@ public class NPC : MonoBehaviour
     {
         if (_npcReaction == NPCSpeech.Idle) // if the NPC is in Idle then you can speak to them/ dialouge box shows up
         {
+            _nametag.text = _name;
             _npcReaction = NPCSpeech.Talking;
             _dialoguebox.SetActive(true);
         }
