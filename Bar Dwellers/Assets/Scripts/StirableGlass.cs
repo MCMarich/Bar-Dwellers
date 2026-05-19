@@ -10,10 +10,11 @@ public class StirableGlass : MonoBehaviour
     public Sprite Mojito;
     public Sprite Scarlet;
     public Sprite Moscow;
+    public Sprite Water;
 
     [Header("Stir Settings")]
     public float StirRequired = 1000f;
-    private float currentStirProgress = 0f;
+    public float currentStirProgress = 0f;
     public bool isStirred = false;
     public GameObject button;
 
@@ -33,7 +34,8 @@ public class StirableGlass : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
         originalPos = rectTransform.anchoredPosition;
         originalScale = rectTransform.localScale;
-        if (Player.Instance._inventoryString.Contains("Scarlet_O_Hera"))
+        
+/*        if (Player.Instance._inventoryString.Contains("Scarlet_O_Hera"))
         {
             liquidImage.sprite = Scarlet;
         }
@@ -45,7 +47,11 @@ public class StirableGlass : MonoBehaviour
         {
             liquidImage.sprite = Moscow;
         }
-
+        else if (Player.Instance._inventoryString.Contains("Water"))
+        {
+            liquidImage.sprite = Water;
+        }
+*/
         if (audioSource != null && stirSound != null)
         {
             audioSource.clip = stirSound;

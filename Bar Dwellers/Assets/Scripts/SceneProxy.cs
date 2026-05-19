@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SceneProxy : MonoBehaviour
@@ -17,6 +18,10 @@ public class SceneProxy : MonoBehaviour
     public void GoToMainMenu() => SceneController.Instance.SendToMainMenu();
 
     public void GoToSpeak() => SceneController.Instance.SendToSpeak();
+
+    public void GoToMixingT() => SceneController.Instance.SendToMixingTutorial();
+
+    public void GoToStirringT() => SceneController.Instance.SendToStirringTutorial();
 
 //    public void MarkAndReturn() 
 //    {

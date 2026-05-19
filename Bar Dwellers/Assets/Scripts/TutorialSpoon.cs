@@ -2,11 +2,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class SimpleSpoon : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class SpoonTutorial : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] private Canvas canvas;
     public StirableGlass targetDrink;
     public float stirRadius = 150f;
+
+    public StirringTutorial tutorial;
 
 
 
@@ -31,6 +33,9 @@ public class SimpleSpoon : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 
         float distance = Vector2.Distance(rectTransform.position, targetDrink.transform.position);
+        
+        tutorial.NotifySpoonGrabbed();
+
 
         if (distance < stirRadius)
         {

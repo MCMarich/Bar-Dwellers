@@ -102,4 +102,14 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Promotion");
     }
+
+    public void SendToMixingTutorial()
+    {
+        SceneManager.LoadScene("MixingTutorial");
+    }
+
+    public void SendToStirringTutorial()
+    {
+        SceneManager.LoadScene("StirringTutorial");
+    }
 }
