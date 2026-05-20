@@ -8,6 +8,7 @@ public class DialogueNode : ScriptableObject
     public bool _isFinalNode;
     public bool _isDead;
     public bool _win;
+    public bool _tutorial;
     //for when we have more entities to choose from
     public string[] _lines;
     public string[] _playerReplyOptions;

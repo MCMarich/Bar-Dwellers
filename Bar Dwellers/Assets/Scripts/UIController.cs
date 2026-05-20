@@ -25,8 +25,11 @@ public class UIController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I) && _boxActive == false)
         {
             _inventorybox.SetActive(true);
-            _uparrow.SetActive(true);
-            _downarrow.SetActive(true);
+            if (_uparrow != null && _downarrow != null) 
+            {
+                _uparrow.SetActive(true);
+                _downarrow.SetActive(true);
+            }
             _boxActive = true;
             Debug.Log(i);
         }
@@ -34,8 +37,11 @@ public class UIController : MonoBehaviour
         {
             _inventorybox.SetActive(false);
             _notebooks[i].SetActive(false);
-            _uparrow.SetActive(false);
-            _downarrow.SetActive(false);
+            if (_uparrow != null && _downarrow != null)
+            {
+                _uparrow.SetActive(false);
+                _downarrow.SetActive(false);
+            }
             _boxActive = false;
         }
     }

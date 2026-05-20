@@ -12,6 +12,7 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private UIController _dialogue;
     [SerializeField] public NPC _currentNPC;
+    [SerializeField] public GameObject _button;
     private DialogueNode _dialogueStartNode;
     public DialogueNode _currentNode;
     private int _currentLine = 0;
@@ -84,7 +85,14 @@ public class DialogueController : MonoBehaviour
         {
             SceneManager.LoadScene("Promotion");
         }
-            Debug.Log("ended dialogue");
+        else if (_currentNode._tutorial == true)
+        {
+            if (_button != null)
+            {
+                _button.gameObject.SetActive(true);
+            }
+        }
+        Debug.Log("ended dialogue");
         _currentNPC._npcReaction = NPCSpeech.Idle;
         _currentNPC._dialoguebox.SetActive(false);
         _waitingForPlayerResponse = false;
