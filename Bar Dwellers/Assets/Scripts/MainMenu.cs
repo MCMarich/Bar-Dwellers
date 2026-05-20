@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
                 Destroy(obj);
             }
         }
-        SceneManager.LoadScene("Speak");
+        SceneManager.LoadScene("SpeakTutorial");
     }
 
     public void How2Play()

@@ -112,4 +112,8 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("StirringTutorial");
     }
+    public void SendToSpeakTutorial()
+    {
+        SceneManager.LoadScene("SpeakTutorial");
+    }
 }

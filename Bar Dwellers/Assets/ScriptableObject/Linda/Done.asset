@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394e3525f288a3649be30b055ab1ef28, type: 3}
+  m_Name: Done
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  npcName: Linda
+  _npcRating: 0
+  _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 1
+  _lines:
+  - That seems about fair.
+  - Obviously, you'll have to manage much more than a simple glass of water.
+  - But for the basics of managing the place.
+  - I think you'll do fine.
+  - Should be about nighttime...
+  - Good luck, I know it can be quite the crowd...
+  _playerReplyOptions: []
+  _npcReplies: []

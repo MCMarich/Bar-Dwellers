@@ -23,13 +23,15 @@ public class SceneProxy : MonoBehaviour
 
     public void GoToStirringT() => SceneController.Instance.SendToStirringTutorial();
 
-//    public void MarkAndReturn() 
-//    {
-//        SceneController.Instance.MarkCurrentSpeak();
-//    }
+    public void GoToSpeakT() => SceneController.Instance.SendToSpeakTutorial();
 
-//    public void BackToSpeak()
-//    {
-//        SceneController.Instance.ReturnSpeak();
-//    }
+    //    public void MarkAndReturn() 
+    //    {
+    //        SceneController.Instance.MarkCurrentSpeak();
+    //    }
+
+    //    public void BackToSpeak()
+    //    {
+    //        SceneController.Instance.ReturnSpeak();
+    //    }
 }
