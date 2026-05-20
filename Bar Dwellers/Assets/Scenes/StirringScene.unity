@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9098039, g: 0.5882353, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1704,7 +1704,9 @@ MonoBehaviour:
   Mojito: {fileID: -6899263452236876038, guid: 4a2f6619c12dae049a580902d4737a83, type: 3}
   Scarlet: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
   Moscow: {fileID: -3230597364664776598, guid: 591d0a1439d844441ac6597f1f357526, type: 3}
+  Water: {fileID: 0}
   StirRequired: 1000
+  currentStirProgress: 0
   isStirred: 0
   button: {fileID: 1694111167}
   audioSource: {fileID: 1888415986}

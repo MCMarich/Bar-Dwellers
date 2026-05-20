@@ -522,7 +522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 280.16}
+  m_AnchoredPosition: {x: 396, y: 280.16}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &605681742
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9083116, g: 0.58679235, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1255,7 +1255,6 @@ MonoBehaviour:
   - {fileID: 6007568698640365827}
   - {fileID: 6951044070880867764}
   - {fileID: 6937195448635503976}
-  DialogueController: {fileID: 1964224224}
 --- !u!1 &819543925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,6 +3647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueController
   _dialogue: {fileID: 767432171}
   _currentNPC: {fileID: 0}
+  _button: {fileID: 0}
   _currentNode: {fileID: 0}
   _appear: 0
 --- !u!1 &1972204249
