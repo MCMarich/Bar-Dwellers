@@ -63,23 +63,20 @@ MonoBehaviour:
     m_path: Assets/Scenes/MixingGarbageCan.unity
     m_guid: be9c01eebf8b2df49aee39b5ada30198
   - m_enabled: 1
-    m_path: Assets/Scenes/MixingTutorial.unity
-    m_guid: fb21dee9f12aee7488e8d19d5cfde1cf
-  - m_enabled: 1
-    m_path: Assets/Scenes/Speak.unity
-    m_guid: 6f876d66d0c78ae479f563f963f53c4a
-  - m_enabled: 1
-    m_path: Assets/Scenes/Speak4.unity
+    m_path: Assets/Scenes/Speak5.unity
     m_guid: dea3524a39b47c747a77a17049fa4f7b
   - m_enabled: 1
-    m_path: Assets/Scenes/Speak5.unity
+    m_path: Assets/Scenes/Speak4.unity
     m_guid: e8219f073eb289246b39c7f6e3772f65
-  - m_enabled: 1
-    m_path: Assets/Scenes/StirringTutorial.unity
-    m_guid: 5c9bbbcb50911cd46b9c0b91c1dc5ac4
   - m_enabled: 1
     m_path: Assets/Scenes/Promotion.unity
     m_guid: 0cd20e7e2bf135a49897d556468b302b
+  - m_enabled: 1
+    m_path: Assets/Scenes/MixingTutorial.unity
+    m_guid: fb21dee9f12aee7488e8d19d5cfde1cf
+  - m_enabled: 1
+    m_path: Assets/Scenes/StirringTutorial.unity
+    m_guid: 5c9bbbcb50911cd46b9c0b91c1dc5ac4
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

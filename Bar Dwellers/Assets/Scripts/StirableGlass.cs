@@ -35,7 +35,7 @@ public class StirableGlass : MonoBehaviour
         originalPos = rectTransform.anchoredPosition;
         originalScale = rectTransform.localScale;
         
-/*        if (Player.Instance._inventoryString.Contains("Scarlet_O_Hera"))
+        if (Player.Instance._inventoryString.Contains("Scarlet_O_Hera"))
         {
             liquidImage.sprite = Scarlet;
         }
@@ -51,7 +51,7 @@ public class StirableGlass : MonoBehaviour
         {
             liquidImage.sprite = Water;
         }
-*/
+
         if (audioSource != null && stirSound != null)
         {
             audioSource.clip = stirSound;
