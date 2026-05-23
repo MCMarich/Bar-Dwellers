@@ -937,7 +937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1832864967642992136, guid: b89bf874d4b2a3c47a9a127e39e9e2b7, type: 3}
+  m_Sprite: {fileID: 3787043634061323234, guid: 80791d2aa8872124ab95dc32421f2047, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1906,7 +1906,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7563268016470972183, guid: 8c0e97a2f6e8b96469747d9972daccd6, type: 3}
+  m_Sprite: {fileID: 5339881584172351257, guid: c574de741af0af8459e0cce84c849d22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1943,7 +1943,7 @@ MonoBehaviour:
     ingredients: 02000000050000000d00000008000000
     drinkColor: {r: 0.6377357, g: 0.08543253, b: 0.08543253, a: 0}
   liquidImage: {fileID: 1390929094}
-  newSprite: {fileID: -3230597364664776598, guid: 591d0a1439d844441ac6597f1f357526, type: 3}
+  newSprite: {fileID: 3762554147685017264, guid: 80791d2aa8872124ab95dc32421f2047, type: 3}
   button: {fileID: 602023439}
 --- !u!82 &1390929097
 AudioSource:

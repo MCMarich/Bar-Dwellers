@@ -259,7 +259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5372022726732311414, guid: b145c21f9ea2373478324952403cb782, type: 3}
+  m_Sprite: {fileID: -6784058750637656967, guid: c0f78ca4706c1454797299a5c7cfb9fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3053,7 +3053,7 @@ MonoBehaviour:
     ingredients: 0e000000
     drinkColor: {r: 0.94716984, g: 0.23854393, b: 0.2198148, a: 0}
   liquidImage: {fileID: 2000237352}
-  newSprite: {fileID: -3061685755285442645, guid: d537ef941ab79ae45b3b8530d0061ffb, type: 3}
+  newSprite: {fileID: -3048273257994612000, guid: eb9076febffff1545913c326dec316ae, type: 3}
   button: {fileID: 898253733}
 --- !u!114 &2000237352
 MonoBehaviour:
@@ -3075,7 +3075,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 9055557732212805892, guid: 5dea7718370aa444e867ba5470ee8a24, type: 3}
+  m_Sprite: {fileID: -7323914228101991714, guid: eb9076febffff1545913c326dec316ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

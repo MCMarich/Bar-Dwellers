@@ -1421,7 +1421,7 @@ MonoBehaviour:
     ingredients: 0d000000
     drinkColor: {r: 0.6377357, g: 0.08543253, b: 0.08543253, a: 0}
   liquidImage: {fileID: 1390929094}
-  newSprite: {fileID: 3827882529524022775, guid: 73d19c8a4f48fcc4caae6d473eee3a35, type: 3}
+  newSprite: {fileID: 620436916626009463, guid: 3c23802c0758b4d41b02bc75d3c38b68, type: 3}
   button: {fileID: 602023439}
 --- !u!82 &1390929097
 AudioSource:
@@ -1916,7 +1916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1832864967642992136, guid: b89bf874d4b2a3c47a9a127e39e9e2b7, type: 3}
+  m_Sprite: {fileID: 521835240327332909, guid: c574de741af0af8459e0cce84c849d22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -1686,10 +1686,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   liquidImage: {fileID: 1888415983}
-  Mojito: {fileID: -6899263452236876038, guid: 4a2f6619c12dae049a580902d4737a83, type: 3}
+  Mojito: {fileID: -6850406599945147345, guid: e4ca77944e2391345a306ae0ff2052e2, type: 3}
   Scarlet: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
-  Moscow: {fileID: -3230597364664776598, guid: 591d0a1439d844441ac6597f1f357526, type: 3}
-  Water: {fileID: 0}
+  Moscow: {fileID: 3762554147685017264, guid: 80791d2aa8872124ab95dc32421f2047, type: 3}
+  Water: {fileID: -3048273257994612000, guid: eb9076febffff1545913c326dec316ae, type: 3}
   StirRequired: 1000
   currentStirProgress: 0
   isStirred: 0
