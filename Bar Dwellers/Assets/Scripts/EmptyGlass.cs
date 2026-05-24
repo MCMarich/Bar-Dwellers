@@ -51,8 +51,15 @@ public class EmptyGlass : MonoBehaviour, IDropHandler
                     Player.Instance._inventoryString.Add(DrinkName);
                     return;
                 }
+                else
+                {
+                    liquidImage.sprite = newSprite;
+                    button.SetActive(true); //Sets a button to swtich screens active
+                    string DrinkName = recipe.DrinkName + "_wrong";
+                    Player.Instance._inventoryString.Add(DrinkName);
+                    return;
+                }
             }
         }
-        Debug.Log("Did not create drink");
     }
 }
