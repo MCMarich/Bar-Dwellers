@@ -35,17 +35,18 @@ public class StirableGlass : MonoBehaviour
         originalPos = rectTransform.anchoredPosition;
         originalScale = rectTransform.localScale;
         
-        if (Player.Instance._inventoryString.Contains("Scarlet_O_Hera"))
+        if (Player.Instance._inventoryString.Contains("Scarlet_O_Hera") || Player.Instance._inventoryString.Contains("Scarlet_O_Hera_wrong") )
         {
             liquidImage.sprite = Scarlet;
         }
-        else if (Player.Instance._inventoryString.Contains("Bluberry Mojito"))
+        else if (Player.Instance._inventoryString.Contains("Bluberry Mojito") || Player.Instance._inventoryString.Contains("Bluberry Mojito_wrong") )
         {
             liquidImage.sprite = Mojito;
         }
-        else if (Player.Instance._inventoryString.Contains("Moscow Mule"))
+        else if (Player.Instance._inventoryString.Contains("Moscow Mule") || Player.Instance._inventoryString.Contains("Moscow Mule_wrong") )
         {
             liquidImage.sprite = Moscow;
+            rectTransform.sizeDelta = new Vector2(250, 300);
         }
         else if (Player.Instance._inventoryString.Contains("Water"))
         {
