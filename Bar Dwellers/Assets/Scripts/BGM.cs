@@ -1,8 +1,11 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class BGM : MonoBehaviour
 {
-    private static BGM instance;
+    public static BGM instance;
+    public AudioSource audioSource;
+    public AudioClip BGM2;
     void Awake()
     {
         if (instance == null)
@@ -14,6 +17,15 @@ public class BGM : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+    }
+    public void ChangeMusic(AudioClip newClip)
+    {
+        // 1. If we are already playing this song, do nothing
+        if (audioSource.clip == newClip) return;
+
+        // 2. Stop, swap, and play
+        audioSource.Stop();
+        audioSource.clip = newClip;
+        audioSource.Play();
     }
 }

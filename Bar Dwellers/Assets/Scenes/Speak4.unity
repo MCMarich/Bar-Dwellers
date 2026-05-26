@@ -3728,6 +3728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00592b443e7302b4f83d2ead985acb22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BGM
+  audioSource: {fileID: 0}
+  BGM2: {fileID: 0}
 --- !u!82 &1897731474
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4018,6 +4020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
   _player: {fileID: 1249751362}
+  audioClip: {fileID: 8300000, guid: d8d23d81aecb78e4fbd06c479fcffe16, type: 3}
 --- !u!114 &1964224224
 MonoBehaviour:
   m_ObjectHideFlags: 0
