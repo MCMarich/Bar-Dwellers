@@ -77,6 +77,9 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/StirringTutorial.unity
     m_guid: 5c9bbbcb50911cd46b9c0b91c1dc5ac4
+  - m_enabled: 1
+    m_path: Assets/Scenes/Fired.unity
+    m_guid: f78bd4870757967449f8da7c5086d085
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
