@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.018761111, g: 0.018772762, b: 0.01886791, a: 0.39215687}
+  m_Color: {r: 0.018761111, g: 0.018772762, b: 0.01886791, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.018761111, g: 0.018772762, b: 0.01886791, a: 0.39215687}
+  m_Color: {r: 0.018761111, g: 0.018772762, b: 0.01886791, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2040,6 +2040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   _player: {fileID: 0}
+  audioClip: {fileID: 0}
 --- !u!114 &801645011 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8890813626295508919, guid: 1250a3b64f7093242bd198b20cae8aea, type: 3}
@@ -2955,7 +2956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.018761111, g: 0.018772762, b: 0.01886791, a: 0.39215687}
+  m_Color: {r: 0.018761111, g: 0.018772762, b: 0.01886791, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3511,7 +3512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.0722178, g: 0.07298443, b: 0.07924521, a: 0.39215687}
+  m_Color: {r: 0.0722178, g: 0.07298443, b: 0.07924521, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
