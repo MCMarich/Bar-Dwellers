@@ -17,10 +17,15 @@ public class Alty : NPC
                 _player._inventoryString.Clear();
                 _dialogueController._currentNode = _dialogueStartingNodes[1];
             }
-            else if (!_player._inventoryString.Contains("Scarlet_O_Hera") && _player._inventoryString.Count != 0)
+            else if (_player._inventoryString.Contains("Scarlet_O_Hera_wrong"))
             {
                 _player._inventoryString.Clear();
                 _dialogueController._currentNode = _dialogueStartingNodes[2];
+            }
+            else if (!_player._inventoryString.Contains("Scarlet_O_Hera") && _player._inventoryString.Count != 0)
+            {
+                _player._inventoryString.Clear();
+                _dialogueController._currentNode = _dialogueStartingNodes[3];
             }
             else
             {
