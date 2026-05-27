@@ -15,10 +15,13 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - it's a surname he uses when he goes out.
   - You probably know him by a different name...
-  - Cthulu.
+  - Cthulhu.
   - I can only hope you'll never have the displeasure of meeting him.
   - Regardless, I feel that's enough about that.
   - I need a drink, hon.

@@ -15,6 +15,9 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Thanks, hon.
   - But I don't need sympathies.
@@ -24,7 +27,7 @@ MonoBehaviour:
   - Or used as a tool for some government.
   - Indeed, our life is better in hiding.
   - Where we can be free.
-  - Don;t worry about it though.
+  - Don't worry about it though.
   - You're a bartender, yes?
   - How about you get me something with some class to it.
   - In light of the old times.

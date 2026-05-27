@@ -17,12 +17,13 @@ MonoBehaviour:
   _isFinalNode: 0
   _isDead: 0
   _win: 0
+  _tutorial: 0
   _lines:
   - Ah, marveling at my impressive aura, I assume.
   - Don't worry...
   - I too would be amazed at my own genius
   - I mean who else would be capable of taking charge of such a corporation...
-  - Barnes and Nobles.
+  - Narnes and Bobles.
   - Speaking of my absolute achievements.
   - I would prefer if you would shut up and get me my drink now.
   _playerReplyOptions: []

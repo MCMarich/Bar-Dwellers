@@ -17,10 +17,11 @@ MonoBehaviour:
   _isFinalNode: 0
   _isDead: 0
   _win: 0
+  _tutorial: 0
   _lines:
   - Do you even know who you're talking to right now?
   - Do you not even have a fraction of a clue?
-  - I am Cthulu.
+  - I am Cthulhu.
   - A true eldritch creature.
   - I can end you if I simply willed it.
   - You're lucky...

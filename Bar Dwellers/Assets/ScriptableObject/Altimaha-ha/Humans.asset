@@ -15,6 +15,9 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Humans are truly quite the special species.
   - Capable to create just as easily as they can destroy.
@@ -22,7 +25,7 @@ MonoBehaviour:
   - I've seen just how damaging humans can be.
   - Not that I'll judge, it's not my place.
   - If I went around judging every human for the actions of few.
-  - 'I would find myselfwith enough rage to fill an ocean. '
+  - 'I would find myself with enough rage to fill an ocean. '
   _playerReplyOptions:
   - I'm sorry.
   - I'll make sure to watch the waste then.

@@ -15,10 +15,13 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 5
   _isFinalNode: 1
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Thank you.
   - Truly, it was wonderful to speak to you.
   - Even for a brief moment...
-  - I hop to see you again soon.
+  - I hope to see you again soon.
   _playerReplyOptions: []
   _npcReplies: []

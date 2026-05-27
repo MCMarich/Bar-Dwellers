@@ -15,8 +15,11 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Heh...
-  - Thar's funny...
+  - That's funny...
   _playerReplyOptions: []
   _npcReplies: []
