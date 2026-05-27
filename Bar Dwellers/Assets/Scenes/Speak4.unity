@@ -119,6 +119,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &5067981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5067983}
+  - component: {fileID: 5067982}
+  m_Layer: 0
+  m_Name: MusicSwap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &5067982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9d701c429a5fd47aca599ba1aba5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::musicswitch
+  newmusic: {fileID: 8300000, guid: d8d23d81aecb78e4fbd06c479fcffe16, type: 3}
+--- !u!4 &5067983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &20286872
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,7 +3725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3230597364664776598, guid: 591d0a1439d844441ac6597f1f357526, type: 3}
+  m_Sprite: {fileID: 3762554147685017264, guid: 80791d2aa8872124ab95dc32421f2047, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4441,7 +4486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3827882529524022775, guid: 73d19c8a4f48fcc4caae6d473eee3a35, type: 3}
+  m_Sprite: {fileID: 620436916626009463, guid: 3c23802c0758b4d41b02bc75d3c38b68, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4963,7 +5008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1915090101210537560, guid: 366f8d70704d8424dbe9bb1631468708, type: 3}
+  m_Sprite: {fileID: 8661482901240610033, guid: 24d7fa1bce4f42f41b0652741a2a72c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5103,7 +5148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6899263452236876038, guid: 4a2f6619c12dae049a580902d4737a83, type: 3}
+  m_Sprite: {fileID: -6850406599945147345, guid: e4ca77944e2391345a306ae0ff2052e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7264,3 +7309,4 @@ SceneRoots:
   - {fileID: 987405123}
   - {fileID: 1733362821}
   - {fileID: 1525421841}
+  - {fileID: 5067983}
