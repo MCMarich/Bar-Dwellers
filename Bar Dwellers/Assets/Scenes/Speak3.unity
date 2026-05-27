@@ -1624,12 +1624,12 @@ MonoBehaviour:
   _player: {fileID: 0}
   _sceneController: {fileID: 1964224223}
   _cutscene: {fileID: 0}
-  _reset: {fileID: 1778261990}
+  _reset: {fileID: 1778261991}
   _dialogueController: {fileID: 1964224224}
   _nametag: {fileID: 1778261990}
   _appear: 0
   _name: Alty
-  _dialoguebox: {fileID: 1705487589}
+  _dialoguebox: {fileID: 1778261992}
   _dialogueStartingNodes:
   - {fileID: 11400000, guid: 7e503cdb4c35fd54bb8957523c90f376, type: 2}
   - {fileID: 11400000, guid: 41311af2ecf6db3458fd3f2fbcdb3efd, type: 2}
