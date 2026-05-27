@@ -50,7 +50,7 @@ public class NPC : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (_npcReaction == NPCSpeech.Talking // lets NPC talk only when the player lets the speech advance with button presses
+        if (_npcReaction == NPCSpeech.Talking // lets NPC talk only when the lets the speech advance with button presses
             && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
             _dialogueController.AdvanceDialogue();
