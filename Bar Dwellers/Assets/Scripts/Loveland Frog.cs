@@ -37,7 +37,6 @@ public class LovelandFrog : NPC
     {
         _reset.text = "...";
         _nametag.text = _name;
-        _scene = SceneManager.GetActiveScene().name;
         if (_scene == "Speak2")
         {
             base.Start();

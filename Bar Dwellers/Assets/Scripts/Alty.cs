@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Alty : NPC
 {
-    private float _delaytimer = 5.0f;
+    private float _delaytimer = 14.0f;
     protected override void Awake()
     {
         _scene = SceneManager.GetActiveScene().name;
@@ -42,7 +42,7 @@ public class Alty : NPC
             base.Start();
         }
     }
-    protected override void Update() 
+    protected override void Update()
     {
         base.Update();
         if (_scene == "Speak3")
