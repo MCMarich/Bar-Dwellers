@@ -1266,7 +1266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragNDrop
   canvas: {fileID: 1572951687}
-  bottleType: 3
+  bottleType: 7
 --- !u!212 &884206890
 SpriteRenderer:
   serializedVersion: 2
@@ -2209,7 +2209,7 @@ MonoBehaviour:
   pourSound: {fileID: 8300000, guid: f08a7ade5d58d284897aa97c59c75c66, type: 3}
   recipeBook:
   - DrinkName: Scarlet_O_Hera
-    ingredients: 00000000010000000200000003000000
+    ingredients: 00000000080000000700000005000000
     drinkColor: {r: 0.6377357, g: 0.08543253, b: 0.08543253, a: 0}
   liquidImage: {fileID: 1390929094}
   newSprite: {fileID: -3061685755285442645, guid: 50e29469b03ec3643ae9249aa7ba52e2, type: 3}
@@ -2814,7 +2814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragNDrop
   canvas: {fileID: 1572951687}
-  bottleType: 2
+  bottleType: 5
 --- !u!212 &1972802191
 SpriteRenderer:
   serializedVersion: 2
@@ -3207,7 +3207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragNDrop
   canvas: {fileID: 1572951687}
-  bottleType: 1
+  bottleType: 8
 --- !u!212 &2100907829
 SpriteRenderer:
   serializedVersion: 2
