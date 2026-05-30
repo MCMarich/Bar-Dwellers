@@ -16,8 +16,10 @@ MonoBehaviour:
   _npcRating: 0.5
   _isFinalNode: 0
   _isDead: 1
+  _win: 0
+  _tutorial: 0
   _lines:
-  - Tch
+  - Tch.
   - Cease.
   _playerReplyOptions: []
   _npcReplies: []

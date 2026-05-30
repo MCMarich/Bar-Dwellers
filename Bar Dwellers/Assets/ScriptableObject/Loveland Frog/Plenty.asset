@@ -15,6 +15,9 @@ MonoBehaviour:
   npcName: Loveland Frog
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Maybe.
   - But if you're like me...
@@ -22,7 +25,7 @@ MonoBehaviour:
   - Nothing more intimate than being surrounded by those who adore you.
   - And who knows...
   - Maybe some day...
-  - That love will be staring out you right in the face.
+  - That love will be staring at you right in the face.
   _playerReplyOptions:
   - I just work here.
   - What if you're wrong?

@@ -15,10 +15,13 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - I understand.
-  - But it can be dificult.
-  - Seeing them all go their seperate ways now.
+  - But it can be difficult.
+  - Seeing them all go their separate ways now.
   - I wonder where my place will be in their future.
   _playerReplyOptions:
   - You feel stuck...

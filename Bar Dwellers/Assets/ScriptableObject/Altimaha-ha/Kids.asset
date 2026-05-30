@@ -15,6 +15,9 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Ah, well I've known Jersey since he was young.
   - He was different then.
@@ -22,7 +25,7 @@ MonoBehaviour:
   - So much rage.
   - I've tried to lend him a hand...
   - But even now he refuses.
-  - He insists on "walking his own path"
+  - He insists on "walking his own path".
   - I suppose everyone has to grow up eventually.
   _playerReplyOptions:
   - What about you?

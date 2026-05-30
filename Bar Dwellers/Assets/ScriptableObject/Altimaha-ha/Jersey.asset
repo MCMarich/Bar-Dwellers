@@ -15,10 +15,13 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
-  - Did he sppok ya, hon?
+  - Did he spook ya, hon?
   - He certainly doesn't mean any of it.
-  - I mean if you only knew half of what he'd been through...
+  - I mean, if you only knew half of what he'd been through...
   - Truly a terrible thing, to live without a mother's love.
   _playerReplyOptions:
   - Have you both known each other long?

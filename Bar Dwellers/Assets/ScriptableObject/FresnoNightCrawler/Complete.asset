@@ -15,9 +15,12 @@ MonoBehaviour:
   npcName: FresnoNightCrawler
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Thanks.
   - Keep the change...
-  - I don't believe in money anyway.
+  - I don't believe in money, anyway.
   _playerReplyOptions: []
   _npcReplies: []

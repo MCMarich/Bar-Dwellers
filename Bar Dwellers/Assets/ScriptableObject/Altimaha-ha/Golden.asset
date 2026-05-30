@@ -15,15 +15,18 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - We cryptids used to be beings of immense powers.
   - Whether we were loved or hated...
   - The people's belief in us was our strength.
   - As long as the people BELIEVED there was a Nightcrawler in Fresno...
-  - There WAS a nightcrawler in Fresno.
+  - There WAS a Nightcrawler in Fresno.
   - Though I suppose you could guess what happened then...
   _playerReplyOptions:
-  - Times changed
+  - Times changed.
   - You know the Nightcrawler?
   _npcReplies:
   - {fileID: 11400000, guid: 169bfa32205d5f54286575be26b0c092, type: 2}

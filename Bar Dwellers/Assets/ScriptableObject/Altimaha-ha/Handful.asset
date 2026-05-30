@@ -15,10 +15,13 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - They're still causing trouble?
   - They were always rowdy, even when they were kids.
-  - Don't worry I'll have a word with them.
+  - Don't worry, I'll have a word with them.
   - They won't cause you anymore trouble.
   - Now, as for me...
   - I'm feeling quite nostalgic.

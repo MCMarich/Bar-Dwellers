@@ -15,8 +15,11 @@ MonoBehaviour:
   npcName: Loveland Frog
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
-  - Yeah. he's a handful.
+  - Yeah, he's a handful.
   - But he's himself.
   - I find that in most lovers even that is too much to ask.
   _playerReplyOptions: []

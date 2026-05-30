@@ -17,11 +17,12 @@ MonoBehaviour:
   _isFinalNode: 0
   _isDead: 0
   _win: 0
+  _tutorial: 0
   _lines:
   - You absolute troglodyte...
   - I'd assumed you'd be a little dim...
   - But this is ridiculous.
-  - 3'8 isn't even that bad.
+  - 3'8" isn't even that bad.
   - It's like average, you know!
   _playerReplyOptions:
   - In your dreams!

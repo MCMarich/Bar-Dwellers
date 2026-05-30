@@ -15,11 +15,14 @@ MonoBehaviour:
   npcName: Squimp
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Well...
   - Well not yet.
   - Like I TOTALLY know who I would vote for!
-  - But I working on it right now.
+  - But I'm working on it right now.
   - It's all part of my grind, you know?
   - S-shut up and get me my drink!
   _playerReplyOptions: []

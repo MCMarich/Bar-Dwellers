@@ -17,9 +17,10 @@ MonoBehaviour:
   _isFinalNode: 0
   _isDead: 0
   _win: 0
+  _tutorial: 0
   _lines:
   - So, you're the new bartender here?
-  - i didn't think they would get one so soon...
+  - I didn't think they would get one so soon...
   - After what happened to the last guy.
   - No matter, it's nothing for you to worry about.
   - Just focus on what I'm about to tell you, and you'll be fine.

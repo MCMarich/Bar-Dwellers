@@ -15,11 +15,14 @@ MonoBehaviour:
   npcName: Loveland Frog
   _npcRating: 4.5
   _isFinalNode: 1
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Thanks, that hit the spot.
   - You may be better at this than I woulda thought.
   - Not only do you got the looks, you got the skill to match.
   - Ah well, I should probably go find Nightcrawler...
-  - Hopefully I can calm him down after what happned earlier.
+  - Hopefully I can calm him down after what happened earlier.
   _playerReplyOptions: []
   _npcReplies: []

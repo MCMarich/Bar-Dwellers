@@ -15,9 +15,12 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - It seems that's always been the case.
-  - The people stopped to believe in us.
+  - The people stopped believing in us.
   - It's been decades since many of us have seen the sun.
   - Many of us can't conjure the strength to manifest beyond this point.
   - Well, execpt for Squimp...

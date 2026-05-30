@@ -15,9 +15,12 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Thanks, hon.
-  - You seem to have some kindness in your heart too.
+  - You seem to have some kindness in your heart, too.
   - If there was anything you should take away from our talk...
   - It should be to show others that kindness inside you.
   - Let it inspire those around you.

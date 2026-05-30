@@ -15,12 +15,15 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - I've been here for a while, hon.
   - There's seen hundreds of us, big and small.
   - I'm sure you became familiar with the Nightcrawler...
   - And the Loveland Frog...
-  - Well I've known them for a long time too.
+  - Well I've known them for a long while, too.
   - It was truly a wonderous time back then.
   _playerReplyOptions:
   - Guess it couldn't stay like that forever.

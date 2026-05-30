@@ -17,10 +17,11 @@ MonoBehaviour:
   _isFinalNode: 0
   _isDead: 0
   _win: 0
+  _tutorial: 0
   _lines:
   - Oh, did I strike a nerve?
   - I'd expect as such.
-  - You kind really does have thin skin.
+  - Your kind really does have thin skin.
   - That's why you're all so emotional.
   - Unlike us...
   - We work off pure logic.

@@ -15,9 +15,12 @@ MonoBehaviour:
   npcName: Loveland Frog
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
-  - Have you never had a partner before.
-  - Don't you know that there are rules for these things.
+  - Have you never had a partner before?
+  - Don't you know that there are rules for these things?
   _playerReplyOptions:
   - Let's start from the top then.
   _npcReplies:

@@ -13,10 +13,15 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: Assembly-CSharp::NewScriptableObjectScript
   npcName: FresnoNightCrawler
+  _npcRating: 0
+  _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - What happened to the old guy?
   - He had actual style.
-  - You..
+  - You...
   - You look like just any old poser down the street.
   _playerReplyOptions:
   - Whatever....

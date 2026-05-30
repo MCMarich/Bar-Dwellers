@@ -15,14 +15,17 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - I don't think so.
   - I believe it is in the mere interest of every living being.
   - To give as much back to the community as they can...
   - Before it's too late.
   - But that's enough of that.
-  - I don't like to waste people's time.
-  - Especially of someone as youtful as yourself.
+  - I don't like to waste peoples' time.
+  - Especially of someone as youthful as yourself.
   - Just get me something to remember the times with.
   _playerReplyOptions: []
   _npcReplies: []

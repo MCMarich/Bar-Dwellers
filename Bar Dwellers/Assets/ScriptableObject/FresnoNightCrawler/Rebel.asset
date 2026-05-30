@@ -15,9 +15,12 @@ MonoBehaviour:
   npcName: FresnoNightCrawler
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - THERE WE GO!
-  - LET THE WINGS OF REBEELION BURN THROUGH YOU!
+  - LET THE WINGS OF REBELLION BURN THROUGH YOU!
   - BURN THE FLAGS OF THE OPPRESSORS!
   - AND NEVER TAKE SHIT FROM ANYONE!
   - ...

@@ -16,6 +16,8 @@ MonoBehaviour:
   _npcRating: 0
   _isFinalNode: 0
   _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Oh, where are my manners?
   - I suppose many of you have forgotten now...
@@ -26,7 +28,7 @@ MonoBehaviour:
   - Well, for better or for worse...
   _playerReplyOptions:
   - What do you mean?
-  - Tell me more about "the others"
+  - Tell me more about "the others".
   - Time tends to change...
   _npcReplies:
   - {fileID: 11400000, guid: 13f6062ec0345214cb311184c6a7b478, type: 2}

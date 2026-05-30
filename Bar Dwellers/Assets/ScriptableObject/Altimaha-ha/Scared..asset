@@ -15,9 +15,12 @@ MonoBehaviour:
   npcName: Alty
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - It's okay, he tends to get people like that.
-  - Besides it's good to be scared.
+  - Besides, it's good to be scared.
   - It reminds us that we still have purpose here.
   - A reason to fear death...
   _playerReplyOptions: []

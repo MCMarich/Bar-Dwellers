@@ -15,6 +15,9 @@ MonoBehaviour:
   npcName: 
   _npcRating: 0
   _isFinalNode: 0
+  _isDead: 0
+  _win: 0
+  _tutorial: 0
   _lines:
   - Now you sound just like him.
   - You know one of the bars we visited was in Fresno.
@@ -23,7 +26,7 @@ MonoBehaviour:
   - And super hot.
   - You know anything about that?
   _playerReplyOptions:
-  - I suppose
+  - I suppose.
   - 'I prefer to keep things professional. '
   _npcReplies:
   - {fileID: 11400000, guid: ef948da48a8d2594db764ccfc8f3b268, type: 2}
